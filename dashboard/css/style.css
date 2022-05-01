@@ -1,0 +1,68 @@
+/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
+
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+    all: unset;
+    display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    Remove list styles (bullets/numbers)
+    in case you use it with normalize.css
+  */
+ol,
+ul {
+    list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+    max-width: 100%;
+}
+
+/* Removes spacing between cells in tables */
+table {
+    border-collapse: collapse;
+}
+
+/* Revert the 'white-space' property for textarea elements on Safari */
+textarea {
+    white-space: revert;
+}
+
+/*--------------GLOBAL---------------------*/
+
+:root {
+    --incommunYellow: #ffcc00;
+    --incommunYellowDark: #deb200;
+    --incommunRed: #fc6049;
+    --incommunRedDark: #d01101;
+    --incommunOrange: #ffa373;
+    --incommunOrangeDark: #f55622;
+    --incommunBlue: #64c3c7;
+    --incommunBlueDark: #008183;
+    --incommunMarron: #dcd587;
+    --incommunMarronDark: #c8c059;
+    --incommunPurple: #caa9e8;
+    --incommunPurpleDark: #a46eae;
+    --incommunMenu: rgba(0,0,0,.2);
+    --white: #fff;
+}
+
+.bg-yellow {
+    background-color: var(--incommunYellow);
+}
+
+.bg-navBar {
+    background-color: var(--incommunMenu);
+}
+
+
+/*--------------NAVBAR---------------------*/

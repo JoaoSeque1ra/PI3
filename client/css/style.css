@@ -1,0 +1,96 @@
+/*--------------GLOBAL---------------------*/
+
+:root {
+    --incommunYellow: #ffcc00;
+    --incommunYellowDark: #deb200;
+    --incommunRed: #fc6049;
+    --incommunRedDark: #d01101;
+    --incommunOrange: #ffa373;
+    --incommunOrangeDark: #f55622;
+    --incommunBlue: #64c3c7;
+    --incommunBlueDark: #008183;
+    --incommunMarron: #dcd587;
+    --incommunMarronDark: #c8c059;
+    --incommunPurple: #caa9e8;
+    --incommunPurpleDark: #a46eae;
+    --incommunMenu: rgba(0,0,0,.2);
+    --white: #fff;
+    --black: #000;
+    --borderColor: #DDDDDD;
+    --checkBoxColor: #fbfbfb;
+    --transparent: #fefefe00;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.bg-yellow {
+    background-color: var(--incommunYellow);
+}
+
+.bg-navBar {
+    background-color: var(--incommunMenu);
+}
+
+.bg-checkBox {
+    background-color: var(--checkBoxColor) !important;
+}
+
+.text-black {
+    color: var(--black) !important;
+}
+
+.text-yellow {
+    color: var(--incommunYellow) !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.pt-pageLeft {
+    padding-top: 9rem !important;
+}
+
+.pt-pageRight {
+    padding-top: 6rem !important;
+}
+
+.font-weight-semiBold {
+    font-weight: 600;
+}
+
+.font-size-1__5rem {
+    font-size: 1.5rem;
+}
+
+/*--------------NAVBAR---------------------*/
+
+.navbar {
+    padding: 30px 50px !important;
+}
+
+.navbar-toggler {
+    border: 0 !important;
+    color: var(--white) !important;
+}
+
+/*--------------Opções---------------------*/
+
+.btn-yellow {
+    background-color: var(--incommunYellow) !important;
+    color: var(--white) !important;
+}
+
+.btn-yellow:hover {
+    background-color: var(--incommunYellowDark) !important;
+}
+
+.btn-transparent {
+    background-color: rgba(0,0,0,0) !important;
+}
+
+.btn-transparent:hover {
+    border-color: var(--incommunYellow) !important;
+}
