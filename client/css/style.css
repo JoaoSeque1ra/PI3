@@ -77,6 +77,43 @@ body {
 }
 
 /*--------------Opções---------------------*/
+/*--------------checkBox---------------------*/
+
+.bg-checkBox {
+    background-color: var(--checkBoxColor) !important;
+    border-radius: 0;
+}
+
+.bg-checkBox:hover {
+    background-color: var(--incommunYellowDark) !important;
+}
+
+
+input[type="checkbox"] {
+    height: 18px;
+    width: 18px;
+    appearance: none;
+    background-color: var(--white);
+    border: var(--borderColor) 1px solid;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="checkbox"]::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 15px;
+    content: "\f00c";
+    display: none;
+}
+
+input[type="checkbox"]:checked::after {
+    display: block;
+}
+
+/*-----------botões seguinte e anterior-----------------*/
 
 .btn-yellow {
     background-color: var(--incommunYellow) !important;
