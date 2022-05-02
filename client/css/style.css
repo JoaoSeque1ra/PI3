@@ -33,10 +33,6 @@ body {
     background-color: var(--incommunMenu);
 }
 
-.bg-checkBox {
-    background-color: var(--checkBoxColor) !important;
-}
-
 .text-black {
     color: var(--black) !important;
 }
@@ -88,6 +84,13 @@ body {
     background-color: var(--incommunYellowDark) !important;
 }
 
+.bg-checkBox:active {
+    background-color: var(--incommunYellow) !important;
+}
+
+.bg-checkBox:hover .form-control {
+    color: var(--white) !important;
+}
 
 input[type="checkbox"] {
     height: 18px;
