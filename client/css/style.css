@@ -37,6 +37,10 @@ body {
     color: var(--black) !important;
 }
 
+.text-white {
+    color: var(--white);
+}
+
 .text-yellow {
     color: var(--incommunYellow) !important;
 }
