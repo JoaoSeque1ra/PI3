@@ -5,67 +5,76 @@ var flag = 0;
 var flag1 = 0;
 var flag2 = 0;
 var flag3 = 0;
+var flag4 = 0;
+
+function cleanCheckBox() {
+    for(let i = 0; i < inputBox.length; i++) {
+        inputBox[i].checked = false;
+    }
+}
+
+cleanCheckBox();
 
 checkBox[0].addEventListener("click", () => {
     if(flag === 0) {
-        checkBox[0].classList.add("bg-yellow");
-        checkBox[0].classList.remove("bg-checkBox");
-        formControl[0].classList.add("text-white");
-        inputBox[0].checked = true;
+        turnOn(0, "bg-yellow");
         flag++;
     } else {
+        turnOff(0, "bg-yellow");
         flag = 0;
-        checkBox[0].classList.add("bg-checkBox");
-        checkBox[0].classList.remove("bg-yellow");
-        formControl[0].classList.remove("text-white");
-        inputBox[0].checked = false;
     }
 });
 
 checkBox[1].addEventListener("click", () => {
     if(flag1 === 0) {
-        checkBox[1].classList.add("bg-yellow");
-        checkBox[1].classList.remove("bg-checkBox");
-        formControl[1].classList.add("text-white");
-        inputBox[1].checked = true;
+        turnOn(1, "bg-yellow");
         flag1++;
     } else {
+        turnOff(1, "bg-yellow");
         flag1 = 0;
-        checkBox[1].classList.add("bg-checkBox");
-        checkBox[1].classList.remove("bg-yellow");
-        formControl[1].classList.remove("text-white");
-        inputBox[1].checked = false;
     }
 });
 
 checkBox[2].addEventListener("click", () => {
     if(flag2 === 0) {
-        checkBox[2].classList.add("bg-yellow");
-        checkBox[2].classList.remove("bg-checkBox");
-        formControl[2].classList.add("text-white");
-        inputBox[2].checked = true;
+        turnOn(2, "bg-yellow");
         flag2++;
     } else {
+        turnOff(2, "bg-yellow");
         flag2 = 0;
-        checkBox[2].classList.add("bg-checkBox");
-        checkBox[2].classList.remove("bg-yellow");
-        formControl[2].classList.remove("text-white");
-        inputBox[2].checked = false;
     }
 });
 
 checkBox[3].addEventListener("click", () => {
     if(flag3 === 0) {
-        checkBox[3].classList.add("bg-yellow");
-        checkBox[3].classList.remove("bg-checkBox");
-        formControl[3].classList.add("text-white");
-        inputBox[3].checked = true;
+        turnOn(3, "bg-yellow");
         flag3++;
     } else {
+        turnOff(3, "bg-yellow");
         flag3 = 0;
-        checkBox[3].classList.add("bg-checkBox");
-        checkBox[3].classList.remove("bg-yellow");
-        formControl[3].classList.remove("text-white");
-        inputBox[3].checked = false;
     }
 });
+
+checkBox[4].addEventListener("click", () => {
+    if(flag4 === 0) {
+        turnOn(4, "bg-yellow");
+        flag4++;
+    } else {
+        turnOff(4, "bg-yellow");
+        flag4 = 0;
+    }
+});
+
+function turnOn(index, bgColor) {
+    checkBox[index].classList.add(bgColor);
+    checkBox[index].classList.remove("bg-checkBox");
+    formControl[index].classList.add("text-white");
+    inputBox[index].checked = true;
+}
+
+function turnOff(index, bgColor) {
+    checkBox[index].classList.add(bgColor);
+    checkBox[index].classList.remove("bg-yellow");
+    formControl[index].classList.remove("text-white");
+    inputBox[index].checked = false;
+}
