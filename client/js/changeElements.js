@@ -2,6 +2,7 @@ var checkBox = document.getElementsByClassName("input-group");
 var formControl = document.getElementsByClassName("form-control");
 var inputBox = document.getElementsByClassName("changeInput");
 var flag = 0, flag1 = 0, flag2 = 0, flag3 = 0, flag4 = 0;
+
 var getBody = document.getElementsByTagName("body");
 var bgColor = getBody[0].getAttribute("id"); 
 
@@ -65,13 +66,11 @@ checkBox[4].addEventListener("click", () => {
 
 function turnOn(index, bgColor) {
     checkBox[index].classList.add(bgColor);
-    checkBox[index].classList.remove("bg-checkBox");
     formControl[index].classList.add("text-white");
     inputBox[index].checked = true;
 }
 
 function turnOff(index, bgColor) {
-    checkBox[index].classList.add(bgColor);
     checkBox[index].classList.remove(bgColor);
     formControl[index].classList.remove("text-white");
     inputBox[index].checked = false;
