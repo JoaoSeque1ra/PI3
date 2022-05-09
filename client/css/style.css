@@ -29,20 +29,28 @@ body {
     background-color: var(--incommunYellow);
 }
 
-.bg-navBar {
-    background-color: var(--incommunMenu);
+.bg-orange {
+    background-color: var(--incommunOrange);
 }
 
-.bg-checkBox {
-    background-color: var(--checkBoxColor) !important;
+.bg-navBar {
+    background-color: var(--incommunMenu);
 }
 
 .text-black {
     color: var(--black) !important;
 }
 
+.text-white {
+    color: var(--white);
+}
+
 .text-yellow {
     color: var(--incommunYellow) !important;
+}
+
+.text-orange {
+    color: var(--incommunOrange);
 }
 
 .cursor-pointer {
@@ -77,6 +85,53 @@ body {
 }
 
 /*--------------Opções---------------------*/
+/*--------------checkBox---------------------*/
+
+.bg-checkBox {
+    background-color: var(--checkBoxColor) !important;
+    border-radius: 0;
+}
+
+.bg-transparent:hover {
+    color: var(--white);
+}
+
+/*--------------checkBox hover color---------------------*/
+
+.bg-checkBoxYellow:hover {
+    background-color: var(--incommunYellowDark) !important;
+}
+
+.bg-checkBoxOrange:hover {
+    background-color: var(--incommunOrangeDark) !important;
+}
+
+
+input[type="checkbox"] {
+    height: 18px;
+    width: 18px;
+    appearance: none;
+    background-color: var(--white);
+    border: var(--borderColor) 1px solid;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="checkbox"]::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 15px;
+    content: "\f00c";
+    display: none;
+}
+
+input[type="checkbox"]:checked::after {
+    display: block;
+}
+
+/*-----------botões seguinte e anterior-----------------*/
 
 .btn-yellow {
     background-color: var(--incommunYellow) !important;
@@ -87,10 +142,24 @@ body {
     background-color: var(--incommunYellowDark) !important;
 }
 
+.btn-orange {
+    background-color: var(--incommunOrange) !important;
+    color: var(--white) !important;
+}
+
+.btn-orange:hover {
+    background-color: var(--incommunOrangeDark) !important;
+}
+
 .btn-transparent {
     background-color: rgba(0,0,0,0) !important;
 }
 
-.btn-transparent:hover {
-    border-color: var(--incommunYellow) !important;
-}
+
+/*-----------Media Query-----------------*/
+
+/* @media only screen and (max-width: 600px) {
+    .font-size-1__5rem {
+      font-size: 1.1rem;
+    }
+} */
