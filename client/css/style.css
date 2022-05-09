@@ -26,11 +26,11 @@ body {
 }
 
 .bg-yellow {
-    background-color: var(--incommunYellow);
+    background-color: var(--incommunYellow) !important;
 }
 
 .bg-orange {
-    background-color: var(--incommunOrange);
+    background-color: var(--incommunOrange) !important;
 }
 
 .bg-navBar {

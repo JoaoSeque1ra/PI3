@@ -66,12 +66,14 @@ checkBox[4].addEventListener("click", () => {
 
 function turnOn(index, bgColor) {
     checkBox[index].classList.add(bgColor);
+    checkBox[index].classList.remove("bg-checkBox");
     formControl[index].classList.add("text-white");
     inputBox[index].checked = true;
 }
 
 function turnOff(index, bgColor) {
     checkBox[index].classList.remove(bgColor);
+    checkBox[index].classList.add("bg-checkBox");
     formControl[index].classList.remove("text-white");
     inputBox[index].checked = false;
 }
