@@ -178,8 +178,8 @@ input[type="checkbox"]:checked::after {
 
 /*-----------Media Query-----------------*/
 
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .font-size-1__5rem {
       font-size: 1.1rem;
     }
-} */
+}
