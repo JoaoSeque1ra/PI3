@@ -100,22 +100,30 @@ body {
     border-radius: 0;
 }
 
-.bg-transparent:hover {
-    color: var(--white);
-}
-
 /*--------------checkBox hover color---------------------*/
 
 .bg-checkBoxYellow:hover {
     background-color: var(--incommunYellowDark) !important;
 }
 
+.bg-checkBoxYellow:hover .form-control {
+    color: var(--white) !important;
+}
+
 .bg-checkBoxOrange:hover {
     background-color: var(--incommunOrangeDark) !important;
 }
 
+.bg-checkBoxOrange:hover .form-control {
+    color: var(--white) !important;
+}
+
 .bg-checkBoxPurple:hover {
     background-color: var(--incommunPurpleDark) !important;
+}
+
+.bg-checkBoxPurple:hover .form-control {
+    color: var(--white) !important;
 }
 
 input[type="checkbox"] {
