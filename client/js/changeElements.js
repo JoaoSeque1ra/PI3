@@ -98,3 +98,30 @@ function turnOff(index, bgColor) {
     formControl[index].classList.remove("text-white");
     inputBox[index].checked = false;
 }
+
+const buttonPrevious = document.getElementById("previous");
+const buttonNext = document.getElementById("next");
+var numberTest = 1;
+var zoneNumber = document.getElementById("number");
+
+function lerVariaveis() {
+    numberTest = Number(document.getElementById("number").value); 
+}
+
+buttonNext.addEventListener("click", () => {
+    if(numberTest >= 12) {
+        alert("Número máximo atingido");
+    } else {
+        numberTest++;
+        zoneNumber.innerHTML = numberTest;
+    }
+});
+
+buttonPrevious.addEventListener("click", () => {
+    if(numberTest == 1) {
+        alert("Número mínimo atingido");
+    } else {
+        numberTest--;
+        zoneNumber.innerHTML = numberTest;
+    }
+});
