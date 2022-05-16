@@ -26,11 +26,15 @@ body {
 }
 
 .bg-yellow {
-    background-color: var(--incommunYellow);
+    background-color: var(--incommunYellow) !important;
 }
 
 .bg-orange {
-    background-color: var(--incommunOrange);
+    background-color: var(--incommunOrange) !important;
+}
+
+.bg-purple {
+    background-color: var(--incommunPurple);
 }
 
 .bg-navBar {
@@ -50,7 +54,11 @@ body {
 }
 
 .text-orange {
-    color: var(--incommunOrange);
+    color: var(--incommunOrange) !important;
+}
+
+.text-purple {
+    color: var(--incommunPurple) !important;
 }
 
 .cursor-pointer {
@@ -92,20 +100,31 @@ body {
     border-radius: 0;
 }
 
-.bg-transparent:hover {
-    color: var(--white);
-}
-
 /*--------------checkBox hover color---------------------*/
 
 .bg-checkBoxYellow:hover {
     background-color: var(--incommunYellowDark) !important;
 }
 
+.bg-checkBoxYellow:hover .form-control {
+    color: var(--white) !important;
+}
+
 .bg-checkBoxOrange:hover {
     background-color: var(--incommunOrangeDark) !important;
 }
 
+.bg-checkBoxOrange:hover .form-control {
+    color: var(--white) !important;
+}
+
+.bg-checkBoxPurple:hover {
+    background-color: var(--incommunPurpleDark) !important;
+}
+
+.bg-checkBoxPurple:hover .form-control {
+    color: var(--white) !important;
+}
 
 input[type="checkbox"] {
     height: 18px;
@@ -151,6 +170,15 @@ input[type="checkbox"]:checked::after {
     background-color: var(--incommunOrangeDark) !important;
 }
 
+.btn-purple {
+    background-color: var(--incommunPurple) !important;
+    color: var(--white) !important;
+}
+
+.btn-purple:hover {
+    background-color: var(--incommunPurpleDark) !important;
+}
+
 .btn-transparent {
     background-color: rgba(0,0,0,0) !important;
 }
@@ -158,8 +186,8 @@ input[type="checkbox"]:checked::after {
 
 /*-----------Media Query-----------------*/
 
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .font-size-1__5rem {
       font-size: 1.1rem;
     }
-} */
+}
