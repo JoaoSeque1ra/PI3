@@ -191,3 +191,18 @@ input[type="checkbox"]:checked::after {
       font-size: 1.1rem;
     }
 }
+
+.socialIcon{
+    padding: 0;
+    list-style: nome;
+    display: flex;
+    fill:var(--incommunOrangeDark);
+    width: 24%;
+    height: 24%;
+    transform: ease-in 0.2s all;
+}
+
+.socialIcon:hover{
+    fill:white;
+    
+}
