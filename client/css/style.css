@@ -189,9 +189,16 @@ input[type="checkbox"]:checked::after {
 /*-----------Cartões-----------------*/
 .card{
     text-align: center;
-    border-radius: 10rem;
+    height: 646px;
+    border: 1px solid var(--incommunYellow) !important;
+    border-radius: 3rem !important;
+    
+    
 }
 
+.card-text{
+    font-size:17px;
+}
 
 /*-----------Media Query-----------------*/
 
