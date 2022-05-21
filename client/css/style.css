@@ -150,6 +150,7 @@ input[type="checkbox"]:checked::after {
     display: block;
 }
 
+
 /*-----------botões seguinte e anterior-----------------*/
 
 .btn-yellow {
@@ -192,17 +193,47 @@ input[type="checkbox"]:checked::after {
     }
 }
 
-.socialIcon{
+.socialIcon {
     padding: 0;
     list-style: nome;
-    display: flex;
-    fill:var(--incommunOrangeDark);
-    width: 24%;
-    height: 24%;
+    fill: var(--incommunOrangeDark);
     transform: ease-in 0.2s all;
 }
 
 .socialIcon:hover{
-    fill:white;
+    fill:white;  
+}
+
+.socialIcon:active {
+    fill:white;  
+}
+
+.comunicacaoIcon {
+    padding: 0;
+    list-style: nome;
+    fill: var(--incommunYellow);
+    transform: ease-in 0.2s all;
+}
+
+.comunicacaoIcon:hover{
+    fill:white;  
+}
+
+.comunicacaoIcon:active {
+    fill:white;  
+}
+
+.websiteIcon{
+    padding: 0;
     
+    list-style: none;
+    fill:var(--incommunPurple);
+
+}
+.websiteIcon:active{
+    fill:white;
+}
+
+.websiteIcon:hover{
+    fill:white;
 }
