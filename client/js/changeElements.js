@@ -136,37 +136,80 @@ function subtrair() {
 
 function teste() {
     if(inputBox[0].checked === true) {
-
+        //Obrigatórios
         document.getElementById("checkBoxLandingPage").classList.add("input-js"); 
         document.getElementById("formControlLandingPage").classList.add("changeFormControl"); 
         document.getElementById("inputLandingPage").classList.add("changeInput"); 
 
-        lerCheckBox();
-
-        inputBox[1].disabled = false;
-
+        //Style
         formControl[1].classList.remove("text-white");
     
         checkBox[1].classList.add("bg-checkBoxPurple");
         checkBox[1].classList.add("bg-checkBox");
         checkBox[1].classList.remove("bg-disable");
-    } else {
-        inputBox[1].disabled = true;
-        inputBox[1].classList.remove("cursor-pointer");
 
-        inputBox[1].classList.remove("changeInput");
+        //Input voltar a funcionar
+        lerCheckBox();
+        inputBox[1].disabled = false;
+    } else {
+        //Style
+        inputBox[1].classList.remove("cursor-pointer");
 
         formControl[1].classList.add("text-white");
 
-        formControl[1].classList.remove("changeFormControl");
-    
         checkBox[1].classList.remove("bg-checkBoxPurple");
         checkBox[1].classList.remove("bg-checkBox");
         checkBox[1].classList.remove("cursor-pointer");
         checkBox[1].classList.add("bg-disable");
 
-        checkBox[1].classList.remove("input-js");    
-        
+        //Input deixa de funcionar
+        inputBox[1].disabled = true;
+
+        //Obrigatórios
+        document.getElementById("checkBoxLandingPage").classList.remove("input-js");
+        document.getElementById("formControlLandingPage").classList.remove("changeFormControl");
+        document.getElementById("inputLandingPage").classList.remove("changeInput");
+
+        lerCheckBox();
+    }
+}
+
+function teste2() {
+    if(inputBox[1].checked === true) {
+        //Obrigatórios
+        document.getElementById("checkBoxWebsite").classList.add("input-js"); 
+        document.getElementById("formControlWebsite").classList.add("changeFormControl"); 
+        document.getElementById("inputWebsite").classList.add("changeInput"); 
+
+        //Style
+        formControl[0].classList.remove("text-white");
+    
+        checkBox[0].classList.add("bg-checkBoxPurple");
+        checkBox[0].classList.add("bg-checkBox");
+        checkBox[0].classList.remove("bg-disable");
+
+        //Input voltar a funcionar
+        lerCheckBox();
+        inputBox[0].disabled = false;
+    } else {
+        //Style
+        checkBox[0].classList.remove("bg-checkBoxPurple");
+        checkBox[0].classList.remove("bg-checkBox");
+        checkBox[0].classList.remove("cursor-pointer");
+        checkBox[0].classList.add("bg-disable");
+
+        inputBox[0].classList.remove("cursor-pointer");
+
+        formControl[0].classList.add("text-white");
+
+        //Input deixa de funcionar
+        inputBox[0].disabled = true;
+
+        //Obrigatórios
+        document.getElementById("checkBoxWebsite").classList.remove("input-js");
+        document.getElementById("formControlWebsite").classList.remove("changeFormControl");
+        document.getElementById("inputWebsite").classList.remove("changeInput");
+
         lerCheckBox();
     }
 }
