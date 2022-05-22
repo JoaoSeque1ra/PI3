@@ -1,4 +1,5 @@
 var checkBox, formControl, inputBox;
+var numeroPagina = 1;
 
 function lerCheckBox() {
     checkBox = document.getElementsByClassName("input-js");
@@ -127,6 +128,26 @@ function subtrair() {
         zoneNumber.innerHTML = numberTest;
     }
 };
+
+//--------------------------------
+
+function subtrair() {
+    if(numeroPagina < 2)
+        alert("Número de pagina máximo atingido");
+    else {
+        numeroPagina--;
+        document.getElementById("number").innerHTML = numeroPagina;
+    }
+}
+
+function somar() {
+    if(numeroPagina > 11)
+        alert("Número de pagina mínimo atingido");
+    else {
+        numeroPagina++;
+        document.getElementById("number").innerHTML = numeroPagina;
+    }
+}
 
 //--------------------------------
 
