@@ -65,13 +65,13 @@
 
                   <div class="col-md-5 col-lg-5 offset-lg-1">
                     <div class="mt-5">
-                        <div class="input-group input-group-lg border cursor-pointer bg-checkBoxPurple bg-checkBox" id="checkBoxWebsite">
-                          <div class="form-control border-0 bg-transparent">
+                        <div class="input-js input-group input-group-lg border cursor-pointer bg-checkBoxPurple bg-checkBox" onclick="teste()">
+                          <div class="changeFormControl form-control border-0 bg-transparent">
                             Website
                           </div>
     
                           <div class="input-group-text border-0 bg-transparent">
-                            <input id="inputWebsite" type="checkbox" class="cursor-pointer text-purple changeInput">
+                            <input type="checkbox" class="cursor-pointer text-purple changeInput">
                           </div>
                         </div>
                     </div>
@@ -79,13 +79,13 @@
 
                   <div class="col-md-5 col-lg-5">
                     <div class="mt-5">
-                        <div class="input-group input-group-lg border cursor-pointer bg-checkBoxPurple bg-checkBox" id="checkBoxLandingPage">
-                          <div class="form-control border-0 bg-transparent">
+                        <div class="input-js input-group input-group-lg border cursor-pointer bg-checkBoxPurple bg-checkBox" id="checkBoxLandingPage">
+                          <div class="changeFormControl form-control border-0 bg-transparent" id="formControlLandingPage">
                             Landing Page
                           </div>
     
                           <div class="input-group-text border-0 bg-transparent">
-                            <input id="inputLandingPage" type="checkbox" class="cursor-pointer text-purple changeInput">
+                            <input type="checkbox" class="cursor-pointer text-purple changeInput" id="inputLandingPage">
                           </div>
                         </div>
                     </div>
@@ -94,24 +94,23 @@
                   <div class="col-md-12 col-lg-10 offset-lg-1">
 
                     <div class="mt-5">
-                      <div class="input-group input-group-lg border cursor-pointer bg-checkBoxPurple bg-checkBox">
-                        <div class="form-control border-0 bg-transparent">
+                      <div class="input-group input-group-lg border bg-purple">
+                        <div class="form-control border-0 bg-transparent text-white">
                           Número de páginas
                         </div>
   
                         <div class="input-group-text border-0 bg-transparent">
-                          <div class="changeInput"></div>
-                          <button type="button" id="previous" class="">-</button>
+                          <button type="button" onclick="subtrair()">-</button>
                           <p id="number" class="text-white px-2">1</p>
-                          <button type="button" id="next">+</button>
+                          <button type="button" onclick="somar()">+</button>
                         </div>
                       </div>
 
                     </div>
 
                     <div class="mt-5">
-                      <div class="input-group input-group-lg border cursor-pointer bg-checkBoxPurple bg-checkBox">
-                        <div class="form-control border-0 bg-transparent">             
+                      <div class="input-js input-group input-group-lg border cursor-pointer bg-checkBoxPurple bg-checkBox">
+                        <div class="changeFormControl form-control border-0 bg-transparent">             
                           Com portfólio
                         </div>
   
@@ -128,8 +127,8 @@
                     </div>
 
                     <div class="mt-5">
-                      <div class="input-group input-group-lg border cursor-pointer bg-checkBoxPurple bg-checkBox">
-                        <div class="form-control border-0 bg-transparent">  
+                      <div class="input-js input-group input-group-lg border cursor-pointer bg-checkBoxPurple bg-checkBox">
+                        <div class="changeFormControl form-control border-0 bg-transparent">  
                           Com criação de conteúdos textuais
                         </div>
   
@@ -146,9 +145,9 @@
                     </div>
 
                     <div class="mt-5">
-                      <div class="input-group input-group-lg border cursor-pointer bg-checkBoxPurple bg-checkBox">
-                        <div class="form-control border-0 bg-transparent">
-                           Com alojamento                         
+                      <div class="input-js input-group input-group-lg border cursor-pointer bg-checkBoxPurple bg-checkBox">
+                        <div class="changeFormControl form-control border-0 bg-transparent">
+                          Com alojamento                         
                         </div>
   
                         <div class="input-group-text border-0 bg-transparent">
@@ -164,8 +163,8 @@
                     </div>
                 
                     <div class="my-5">
-                        <div class="input-group input-group-lg border cursor-pointer bg-checkBoxPurple bg-checkBox">
-                          <div class="form-control border-0 bg-transparent">
+                        <div class="input-js input-group input-group-lg border cursor-pointer bg-checkBoxPurple bg-checkBox">
+                          <div class="changeFormControl form-control border-0 bg-transparent">
                             Com domínio                         
                           </div>
     

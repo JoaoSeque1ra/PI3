@@ -1,6 +1,14 @@
-var checkBox = document.getElementsByClassName("input-group");
-var formControl = document.getElementsByClassName("form-control");
-var inputBox = document.getElementsByClassName("changeInput");
+var checkBox, formControl, inputBox;
+
+function lerCheckBox() {
+    checkBox = document.getElementsByClassName("input-js");
+    formControl = document.getElementsByClassName("changeFormControl");
+    inputBox = document.getElementsByClassName("changeInput");
+    console.log("passei aqui");
+}
+
+lerCheckBox();
+
 var flag = 0, flag1 = 0, flag2 = 0, flag3 = 0, flag4 = 0, flag5 = 0, flag6 = 0;
 
 var getBody = document.getElementsByTagName("body");
@@ -99,29 +107,66 @@ function turnOff(index, bgColor) {
     inputBox[index].checked = false;
 }
 
-const buttonPrevious = document.getElementById("previous");
-const buttonNext = document.getElementById("next");
 var numberTest = 1;
 var zoneNumber = document.getElementById("number");
 
-function lerVariaveis() {
-    numberTest = Number(document.getElementById("number").value); 
-}
-
-buttonNext.addEventListener("click", () => {
-    if(numberTest >= 12) {
+function somar() {
+    if(numberTest == 12) {
         alert("Número máximo atingido");
     } else {
         numberTest++;
         zoneNumber.innerHTML = numberTest;
     }
-});
+};
 
-buttonPrevious.addEventListener("click", () => {
+function subtrair() {
     if(numberTest == 1) {
         alert("Número mínimo atingido");
     } else {
         numberTest--;
         zoneNumber.innerHTML = numberTest;
     }
-});
+};
+
+//--------------------------------
+
+//var checkBox = document.getElementsByClassName("input-js");
+//var formControl = document.getElementsByClassName("changeFormControl");
+//var inputBox = document.getElementsByClassName("changeInput");
+
+function teste() {
+    if(inputBox[0].checked === true) {
+
+        document.getElementById("checkBoxLandingPage").classList.add("input-js"); 
+        document.getElementById("formControlLandingPage").classList.add("changeFormControl"); 
+        document.getElementById("inputLandingPage").classList.add("changeInput"); 
+
+        lerCheckBox();
+
+        inputBox[1].disabled = false;
+
+        formControl[1].classList.remove("text-white");
+    
+        checkBox[1].classList.add("bg-checkBoxPurple");
+        checkBox[1].classList.add("bg-checkBox");
+        checkBox[1].classList.remove("bg-disable");
+    } else {
+        inputBox[1].disabled = true;
+        inputBox[1].classList.remove("cursor-pointer");
+
+        inputBox[1].classList.remove("changeInput");
+
+        formControl[1].classList.add("text-white");
+
+        formControl[1].classList.remove("changeFormControl");
+    
+        checkBox[1].classList.remove("bg-checkBoxPurple");
+        checkBox[1].classList.remove("bg-checkBox");
+        checkBox[1].classList.remove("cursor-pointer");
+        checkBox[1].classList.add("bg-disable");
+
+        checkBox[1].classList.remove("input-js");    
+        
+        lerCheckBox();
+    }
+}
