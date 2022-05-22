@@ -100,6 +100,29 @@ body {
     border-radius: 0;
 }
 
+/*--------------Icons checkBox---------------------*/
+
+.colorIconOrange {
+    fill: var(--incommunOrangeDark);
+}
+
+.colorIconYellow {
+    fill: var(--incommunYellow);
+}
+
+.colorIconPurple {
+    fill: var(--incommunPurple);
+}
+
+.colorIconWhite {
+    fill: var(--white);
+}
+
+/*Hover do icons*/
+.bg-checkBox:hover .colorIconPurple, .colorIconYellow, .colorIconOrange {
+    fill: var(--white);
+}
+
 /*--------------checkBox hover color---------------------*/
 
 .bg-checkBoxYellow:hover {
@@ -191,49 +214,4 @@ input[type="checkbox"]:checked::after {
     .font-size-1__5rem {
       font-size: 1.1rem;
     }
-}
-
-.socialIcon {
-    padding: 0;
-    list-style: nome;
-    fill: var(--incommunOrangeDark);
-    transform: ease-in 0.2s all;
-}
-
-.socialIcon:hover{
-    fill:white;  
-}
-
-.socialIcon:active {
-    fill:white;  
-}
-
-.comunicacaoIcon {
-    padding: 0;
-    list-style: nome;
-    fill: var(--incommunYellow);
-    transform: ease-in 0.2s all;
-}
-
-.comunicacaoIcon:hover{
-    fill:white;  
-}
-
-.comunicacaoIcon:active {
-    fill:white;  
-}
-
-.websiteIcon{
-    padding: 0;
-    
-    list-style: none;
-    fill:var(--incommunPurple);
-
-}
-.websiteIcon:active{
-    fill:white;
-}
-
-.websiteIcon:hover{
-    fill:white;
 }
