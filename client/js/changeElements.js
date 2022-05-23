@@ -108,27 +108,6 @@ function turnOff(index, bgColor) {
     inputBox[index].checked = false;
 }
 
-var numberTest = 1;
-var zoneNumber = document.getElementById("number");
-
-function somar() {
-    if(numberTest == 12) {
-        alert("Número máximo atingido");
-    } else {
-        numberTest++;
-        zoneNumber.innerHTML = numberTest;
-    }
-};
-
-function subtrair() {
-    if(numberTest == 1) {
-        alert("Número mínimo atingido");
-    } else {
-        numberTest--;
-        zoneNumber.innerHTML = numberTest;
-    }
-};
-
 //--------------------------------
 
 function subtrair() {
