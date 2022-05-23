@@ -18,6 +18,7 @@
     --black: #000;
     --borderColor: #DDDDDD;
     --checkBoxColor: #fbfbfb;
+    --checkBoxColorDisable: #c9c9c9;
     --transparent: #fefefe00;
 }
 
@@ -39,6 +40,10 @@ body {
 
 .bg-navBar {
     background-color: var(--incommunMenu);
+}
+
+.bg-disable {
+    background-color: var(--checkBoxColorDisable);
 }
 
 .text-black {
@@ -173,6 +178,11 @@ input[type="checkbox"]:checked::after {
     display: block;
 }
 
+/*--------------Mais e menos---------------------*/
+
+.bg-transparent p {
+    margin-bottom: 0;
+}
 
 /*-----------botões seguinte e anterior-----------------*/
 
