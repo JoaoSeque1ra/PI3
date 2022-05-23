@@ -195,42 +195,42 @@ function teste() {
     }
 }
 
-function teste2() {
-    if(inputBox[1].checked === true) {
-        //Obrigatórios
-        document.getElementById("checkBoxWebsite").classList.add("input-js"); 
-        document.getElementById("formControlWebsite").classList.add("changeFormControl"); 
-        document.getElementById("inputWebsite").classList.add("changeInput"); 
+// function teste2() {
+//     if(inputBox[1].checked === true) {
+//         //Obrigatórios
+//         document.getElementById("checkBoxWebsite").classList.add("input-js"); 
+//         document.getElementById("formControlWebsite").classList.add("changeFormControl"); 
+//         document.getElementById("inputWebsite").classList.add("changeInput"); 
 
-        //Style
-        formControl[0].classList.remove("text-white");
+//         //Style
+//         formControl[0].classList.remove("text-white");
     
-        checkBox[0].classList.add("bg-checkBoxPurple");
-        checkBox[0].classList.add("bg-checkBox");
-        checkBox[0].classList.remove("bg-disable");
+//         checkBox[0].classList.add("bg-checkBoxPurple");
+//         checkBox[0].classList.add("bg-checkBox");
+//         checkBox[0].classList.remove("bg-disable");
 
-        //Input voltar a funcionar
-        lerCheckBox();
-        inputBox[0].disabled = false;
-    } else {
-        //Style
-        checkBox[0].classList.remove("bg-checkBoxPurple");
-        checkBox[0].classList.remove("bg-checkBox");
-        checkBox[0].classList.remove("cursor-pointer");
-        checkBox[0].classList.add("bg-disable");
+//         //Input voltar a funcionar
+//         lerCheckBox();
+//         inputBox[0].disabled = false;
+//     } else {
+//         //Style
+//         checkBox[0].classList.remove("bg-checkBoxPurple");
+//         checkBox[0].classList.remove("bg-checkBox");
+//         checkBox[0].classList.remove("cursor-pointer");
+//         checkBox[0].classList.add("bg-disable");
 
-        inputBox[0].classList.remove("cursor-pointer");
+//         inputBox[0].classList.remove("cursor-pointer");
 
-        formControl[0].classList.add("text-white");
+//         formControl[0].classList.add("text-white");
 
-        //Input deixa de funcionar
-        inputBox[0].disabled = true;
+//         //Input deixa de funcionar
+//         inputBox[0].disabled = true;
 
-        //Obrigatórios
-        document.getElementById("checkBoxWebsite").classList.remove("input-js");
-        document.getElementById("formControlWebsite").classList.remove("changeFormControl");
-        document.getElementById("inputWebsite").classList.remove("changeInput");
+//         //Obrigatórios
+//         document.getElementById("checkBoxWebsite").classList.remove("input-js");
+//         document.getElementById("formControlWebsite").classList.remove("changeFormControl");
+//         document.getElementById("inputWebsite").classList.remove("changeInput");
 
-        lerCheckBox();
-    }
-}
+//         lerCheckBox();
+//     }
+// }
