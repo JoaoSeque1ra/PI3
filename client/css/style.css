@@ -100,6 +100,29 @@ body {
     border-radius: 0;
 }
 
+/*--------------Icons checkBox---------------------*/
+
+.colorIconOrange {
+    fill: var(--incommunOrangeDark);
+}
+
+.colorIconYellow {
+    fill: var(--incommunYellow);
+}
+
+.colorIconPurple {
+    fill: var(--incommunPurple);
+}
+
+.colorIconWhite {
+    fill: var(--white);
+}
+
+/*Hover do icons*/
+.bg-checkBox:hover .colorIconPurple, .colorIconYellow, .colorIconOrange {
+    fill: var(--white);
+}
+
 /*--------------checkBox hover color---------------------*/
 
 .bg-checkBoxYellow:hover {
@@ -149,6 +172,7 @@ input[type="checkbox"]::after {
 input[type="checkbox"]:checked::after {
     display: block;
 }
+
 
 /*-----------botões seguinte e anterior-----------------*/
 
