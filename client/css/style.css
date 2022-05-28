@@ -17,6 +17,7 @@
     --white: #fff;
     --black: #000;
     --borderColor: #DDDDDD;
+    --cardColorOpacity: #dddddd49;
     --checkBoxColor: #fbfbfb;
     --transparent: #fefefe00;
 }
@@ -33,8 +34,20 @@ body {
     background-color: var(--incommunOrange) !important;
 }
 
+.bg-blue {
+    background-color: var(--incommunBlue) !important;; 
+}
+
 .bg-purple {
-    background-color: var(--incommunPurple);
+    background-color: var(--incommunPurple) !important;
+}
+
+.bg-borderColor {
+    background-color: var(--borderColor) !important;
+}
+
+.bg-cardColorOpacity {
+    background-color: var(--cardColorOpacity) !important;
 }
 
 .bg-navBar {
@@ -55,6 +68,10 @@ body {
 
 .text-orange {
     color: var(--incommunOrange) !important;
+}
+
+.text-blue {
+    color: var(--incommunBlue) !important;
 }
 
 .text-purple {
@@ -80,6 +97,7 @@ body {
 .font-size-1__5rem {
     font-size: 1.5rem;
 }
+
 
 /*--------------NAVBAR---------------------*/
 
@@ -116,6 +134,14 @@ body {
 }
 
 .bg-checkBoxOrange:hover .form-control {
+    color: var(--white) !important;
+}
+
+.bg-checkBoxBlue:hover {
+    background-color: var(--incommunBlueDark) !important;
+}
+
+.bg-checkBoxBlue:hover .form-control {
     color: var(--white) !important;
 }
 
@@ -172,6 +198,11 @@ input[type="checkbox"]:checked::after {
     background-color: var(--incommunOrangeDark) !important;
 }
 
+.btn-blue {
+    background-color: var(--incommunBlue) !important;
+    color: var(--white) !important;
+}
+
 .btn-purple {
     background-color: var(--incommunPurple) !important;
     color: var(--white) !important;
@@ -187,13 +218,15 @@ input[type="checkbox"]:checked::after {
 
 
 /*-----------Cartões-----------------*/
-.card{
-    text-align: center;
-    height: 646px;
+.card-paidmedia-gestaoredessociais{
+    text-align: center !important;
+    height: 646px !important;
     border: 1px solid var(--incommunYellow) !important;
     border-radius: 3rem !important;
-    
-    
+}
+
+.card-personalizar{
+    border: 0px solid var(--cardColorOpacity) !important;
 }
 
 .card-text{
