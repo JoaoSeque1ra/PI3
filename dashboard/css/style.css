@@ -20,6 +20,7 @@
     --checkBoxColor: #fbfbfb;
     --transparent: #fefefe00;
     --grayDashboard: #555555;
+    --grayDashboardHover: #777777;
 }
 
 body {
@@ -88,11 +89,9 @@ body {
 
 /*--------------NAVBAR---------------------*/
 
-
-
-/*--------------Opções---------------------*/
-/*--------------checkBox---------------------*/
-
+.nav-link:hover {
+    background-color: var(--grayDashboardHover) !important;
+}
 
 /*--------------checkBox hover color---------------------*/
 
