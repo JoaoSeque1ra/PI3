@@ -124,9 +124,19 @@ body {
 }
 
 /*Hover do icons*/
-.bg-checkBox:hover .colorIconPurple, .colorIconYellow, .colorIconOrange {
+.bg-checkBox:hover .colorIconPurple{
     fill: var(--white);
 }
+
+.bg-checkBox:hover .colorIconYellow{
+    fill: var(--white);
+}
+
+.bg-checkBox:hover .colorIconOrange{
+    fill: var(--white);
+}
+
+
 
 /*--------------checkBox hover color---------------------*/
 
@@ -224,4 +234,50 @@ input[type="checkbox"]:checked::after {
     .font-size-1__5rem {
       font-size: 1.1rem;
     }
+}
+
+
+/*Página Final*/
+
+#fundo-externo {
+    overflow: hidden; /* para que não tenha rolagem se a imagem de fundo for maior que a tela */
+
+}
+
+#fundo {
+    position: fixed; /* posição fixa para que a possível rolagem da tela não revele espaços em branco */
+    width: 100%;
+    height: 20%;
+}
+
+#fundo img {
+    width: 100%;
+   
+}
+
+#texto {
+    position: absolute;
+    
+  
+}
+.fundo-obrigada{
+    position:relative;
+    color:transparent;
+    text-align: center;
+    -webkit-text-stroke: 1px white;
+    font-size: 150px;
+    padding: 0%;
+    margin-top: 12%;
+    
+
+    
+
+}
+
+.texto-fundo{
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 0%;
+    font-size: 150%;
 }

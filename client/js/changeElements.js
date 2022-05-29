@@ -1,10 +1,12 @@
-var checkBox, formControl, inputBox;
+var checkBox, formControl, inputBox, icon;
 var numeroPagina = 1;
 
 function lerCheckBox() {
     checkBox = document.getElementsByClassName("input-js");
     formControl = document.getElementsByClassName("changeFormControl");
     inputBox = document.getElementsByClassName("changeInput");
+    icon = document.getElementsByClassName("iconCheckBox");
+
     console.log("passei aqui");
 }
 
@@ -99,6 +101,7 @@ function turnOn(index, bgColor) {
     checkBox[index].classList.remove("bg-checkBox");
     formControl[index].classList.add("text-white");
     inputBox[index].checked = true;
+    icon[index].classList.add("colorIconWhite");
 }
 
 function turnOff(index, bgColor) {
@@ -106,6 +109,7 @@ function turnOff(index, bgColor) {
     checkBox[index].classList.add("bg-checkBox");
     formControl[index].classList.remove("text-white");
     inputBox[index].checked = false;
+    icon[index].classList.remove("colorIconWhite");
 }
 
 //--------------------------------
