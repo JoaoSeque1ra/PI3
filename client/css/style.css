@@ -230,7 +230,15 @@ input[type="checkbox"]:checked::after {
 }
 
 .card-text{
-    font-size:17px;
+    font-size:17px !important;
+}
+
+.card-title{
+    font-size: 22px !important;
+}
+
+.card-subtitle{
+    font-size: 17px !important;
 }
 
 /*-----------Media Query-----------------*/
