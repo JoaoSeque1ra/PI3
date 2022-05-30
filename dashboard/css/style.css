@@ -76,6 +76,10 @@ body {
     color: var(--incommunPurple) !important;
 }
 
+.text-gray {
+    color: var(--grayDashboardHover);
+}
+
 .cursor-pointer {
     cursor: pointer;
 }
@@ -100,9 +104,17 @@ body {
     height: 70px;
 }
 
+.vh-35 {
+    height: 35vh;
+}
+
 /*--------------NAVBAR---------------------*/
 
 .nav-link:hover {
+    background-color: var(--grayDashboardHover) !important;
+}
+
+.active {
     background-color: var(--grayDashboardHover) !important;
 }
 
@@ -147,16 +159,18 @@ body {
     background-color: var(--incommunPurpleDark) !important;
 }
 
+.btn-gray {
+    background-color: var(--grayDashboard) !important;
+}
+
+.btn-gray:hover {
+    background-color: var(--grayDashboardHover) !important;
+}
+
+.btn-gray a {
+    color: var(--white) !important;
+}
 
 .btn-transparent {
     background-color: rgba(0,0,0,0) !important;
-}
-
-
-/*-----------Media Query-----------------*/
-
-@media only screen and (max-width: 600px) {
-    .font-size-1__5rem {
-      font-size: 1.1rem;
-    }
 }
