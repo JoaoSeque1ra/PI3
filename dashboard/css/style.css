@@ -21,6 +21,7 @@
     --transparent: #fefefe00;
     --grayDashboard: #555555;
     --grayDashboardHover: #777777;
+    --cardsColorDashboard: hsla(0, 0%, 0%, 0.03);
 }
 
 body {
@@ -42,6 +43,10 @@ body {
 
 .bg-gray {
     background-color: var(--grayDashboard) !important;
+}
+
+.bg-cardsDashboard {
+    background-color: var(--cardsColorDashboard) !important;
 }
 
 .bg-white {
