@@ -23,6 +23,7 @@
 }
 
 body {
+    font-family: 'Poppins', sans-serif !important;
     scroll-behavior: smooth;
 }
 
@@ -36,6 +37,10 @@ body {
 
 .bg-blue {
     background-color: var(--incommunBlue) !important;; 
+}
+
+.bg-blue-dark {
+    background-color: var(--incommunBlueDark) !important;; 
 }
 
 .bg-purple {
@@ -74,6 +79,9 @@ body {
     color: var(--incommunBlue) !important;
 }
 
+.text-blue-dark {
+    color: var(--incommunBlueDark) !important;
+}
 .text-purple {
     color: var(--incommunPurple) !important;
 }
