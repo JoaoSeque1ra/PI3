@@ -47,6 +47,10 @@ body {
     background-color: var(--white) !important;
 }
 
+.bg-blue {
+    background-color: var(--incommunBlue);
+}
+
 .bg-navBar {
     background-color: var(--incommunMenu);
 }
@@ -98,7 +102,6 @@ body {
 }
 
 /*--------------checkBox hover color---------------------*/
-
 
 
 /*-----------botões seguinte e anterior-----------------*/
