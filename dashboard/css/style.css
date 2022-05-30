@@ -87,6 +87,10 @@ body {
     font-size: 1.2rem;
 }
 
+.changeContainer-fluid {
+    margin-left: 280px !important;
+}
+
 /*--------------NAVBAR---------------------*/
 
 .nav-link:hover {

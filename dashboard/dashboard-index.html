@@ -29,8 +29,9 @@
 
 <body>
     <header>
-        <div class="position-fixed d-flex flex-column flex-shrink-0 ps-3 py-3 text-white bg-gray vh-100"
+        <nav class="position-fixed d-flex flex-column flex-shrink-0 ps-3 py-3 text-white bg-gray vh-100"
             style="width: 280px;">
+
             <a href="/" class="mb-md-0 me-md-auto text-white text-decoration-none">
                 <img src="imagens/logotipoincommun.png" width="180" class="d-none d-md-block" alt="incommun">
                 <img src="imagens/logotipoincommun.png" width="150" class="d-block d-md-none" alt="incommun">
@@ -53,7 +54,7 @@
                                     fill="#fff" />
                             </g>
                         </svg>
-                        Preços
+                        <div class="d-none d-md-block">Preços</div>
                     </a>
 
                     <ul class="nav nav-pills flex-column mb-auto">
@@ -257,11 +258,18 @@
                     <li><a class="dropdown-item" href="#">Sign out</a></li>
                 </ul>
             </div>
-        </div>
+
+        </nav>
     </header>
 
     <main>
-
+        <div class="container-fluid changeContainer-fluid">
+            <div class="row mt-5">
+                <div class="col-lg-3 offset-lg-1">teste1</div>
+                <div class="col-lg-4">teste2</div>
+                <div class="col-lg-4">teste3</div>
+            </div>
+        </div>
     </main>
 
     <!--Bootstrap JavaScript-->
