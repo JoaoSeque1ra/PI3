@@ -25,6 +25,7 @@
 
 body {
     scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 .bg-yellow {
@@ -93,6 +94,10 @@ body {
 
 .changeContainer-fluid {
     margin-left: 280px !important;
+}
+
+.h-36px {
+    height: 399px;
 }
 
 /*--------------NAVBAR---------------------*/
