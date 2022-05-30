@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-Pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orçamento - incommun Website</title>
+
+  <!--Nosso CSS-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!--JQuery JavaScript-->
+  <script src="js/jquery-3.6.0.min.js" async></script>
+
+  <!--Tipografia Poppins-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!--Icon da checkBox-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body id="bg-purple">
+  <header>
+    <nav class="navbar navbar-dark fixed-top bg-navBar">
+      <a class="navbar-brand" href="#">
+        <img src="imagens/logotipoincommun.png" width="240" class="d-none d-md-block" alt="incommun">
+        <img src="imagens/logotipoincommun.png" width="200" class="d-block d-md-none" alt="incommun">
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Marketing Digital</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Design gráfico</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Websites & Lojas online</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Comunicação & Consultoria</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 col-lg-7 pt-pageLeft">
+          <div class="row">
+
+            <div class="col-md-12 col-lg-10 offset-lg-1 font-weight-semiBold font-size-1__5rem">
+              Orçamento / Website & Loja Online /<span class="font-weight-bold text-purple"> Loja Online</span>
+            </div>
+
+            <div class="col-md-12 col-lg-10 offset-lg-1">
+
+              <div class="mt-5">
+                <div class="input-group input-group-lg border bg-purple">
+                  <div class="form-control border-0 bg-transparent text-white">
+                    <svg id="sheet" xmlns="http://www.w3.org/2000/svg" width="19.164" height="24.082" viewBox="0 0 19.164 24.082">
+                      <path id="Caminho_53" data-name="Caminho 53" d="M146.767,0h-7.416V17.528H151.96V5.193h-5.193Zm0,0" transform="translate(-132.797)" fill= var(--white) />
+                      <path id="Caminho_54" data-name="Caminho 54" d="M327.035,13.185h3.318l-3.318-3.318Zm0,0" transform="translate(-311.653 -9.403)" fill= var(--white) />
+                      <path id="Caminho_55" data-name="Caminho 55" d="M71.542,85.337V69.675H69.676V87.2H82.286V85.337Zm0,0" transform="translate(-66.399 -66.398)" fill= var(--white) />
+                      <path id="Caminho_56" data-name="Caminho 56" d="M1.866,155.01V139.348H0v17.528H12.609V155.01Zm0,0" transform="translate(0 -132.794)" fill= var(--white) />
+                    </svg>
+                    Número de página
+                  </div>
+
+                  <div class="input-group-text border-0 bg-transparent">
+                    <button class="btn btn-light btn-sm" type="button" onclick="subtrair()">
+                      <img src="./imagens/remove.svg" alt="remove" width="15" height="15">
+                    </button>
+                    <p id="number" class="text-white px-2">1</p>
+                    <button class="btn btn-light btn-sm" type="button" onclick="somar()">
+                      <img src="./imagens/add.svg" alt="remove" width="15" height="15">
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-5">
+                <div class="input-js input-group input-group-lg border cursor-pointer bg-checkBoxPurple bg-checkBox">
+                  <div class="changeFormControl form-control border-0 bg-transparent">
+                    <svg class="colorIconPurple iconCheckBox" xmlns="http://www.w3.org/2000/svg" id="Layer_1"
+                      enable-background="new 0 0 511.997 511.997" height="24" viewBox="0 0 511.997 511.997" width="24">
+                      <g>
+                        <path d="m173.406 446.712h-22.664v30h210.535v-30h-22.662l-7.141-36.333h-150.928z" />
+                        <path d="m188.909 196.097 6.993-37.073h-82.08l6.993 37.073z" />
+                        <path d="m0 344.375h511.997v36.004h-511.997z" />
+                        <path
+                          d="m511.997 35.285h-511.997v279.091h511.997zm-374.268 239.482h-30v-30.002h30zm64.265 0h-30v-30.002h30zm-126.969-159.6h-17.349v-30h42.219l8.273 43.856h123.922l-18.312 97.073h-117.833zm379.005 137.397h-153.02v-30h153.02zm0-60.003h-153.02v-30h153.02zm-153.02-60.004v-30h153.02v30z" />
+                      </g>
+                    </svg>
+                    Com Integração
+                  </div>
+
+                  <div class="input-group-text border-0 bg-transparent">
+                    <input id="input" type="checkbox" class="cursor-pointer text-purple changeInput">
+                  </div>
+                </div>
+
+                <div class="card rounded-0 border-top-0">
+                  <div class="card-body">
+                    Para a criação da sua página online quais os tópicos que gostaria de adicionar?
+                    <div class="ps-2 pt-4">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input text-purple cursor-pointer" type="checkbox" id="inlineCheckbox1" value="Produtos">
+                        <label class="form-check-label" for="inlineCheckbox1">Produtos</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input text-purple cursor-pointer" type="checkbox" value="Contactos">
+                        <label class="form-check-label" for="inlineCheckbox2">Contactos</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input text-purple cursor-pointer" type="checkbox" value="Equipas">
+                        <label class="form-check-label" for="inlineCheckbox3">Equipas</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input text-purple cursor-pointer" type="checkbox" value="Outros">
+                        <label class="form-check-label" for="inlineCheckbox4">Outros</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-5">
+                <div class="input-js input-group input-group-lg border cursor-pointer bg-checkBoxPurple bg-checkBox">
+                  <div class="changeFormControl form-control border-0 bg-transparent">
+                    <svg class="colorIconPurple iconCheckBox" xmlns="http://www.w3.org/2000/svg" width="23.595" height="24.021" viewBox="0 0 23.595 24.021">
+                      <g id="Layer_22" data-name="Layer 22" transform="translate(-3 -3)">
+                        <path id="Caminho_49" data-name="Caminho 49" d="M18.738,3H3V24.536H5.485V5.071A.414.414,0,0,1,5.9,4.657H18.738Z" transform="translate(0 0)" />
+                        <path id="Caminho_50" data-name="Caminho 50" d="M48.725,36.825a.414.414,0,0,1,.034-.616l1.418-1.134-6.8-1.7,1.7,6.8,1.134-1.418a.414.414,0,0,1,.3-.156h.023a.414.414,0,0,1,.293.121l1.524,1.524.263-1.314a.414.414,0,0,1,.325-.325l1.312-.263Z" transform="translate(-23.653 -17.794)" />
+                        <path id="Caminho_51" data-name="Caminho 51" d="M43,10.414v1.9h1.9Z" transform="translate(-23.434 -4.343)" />
+                        <path id="Caminho_52" data-name="Caminho 52" d="M25.91,27.223a.426.426,0,0,1-.088-.01.414.414,0,0,1-.314-.3l-2.071-8.283a.414.414,0,0,1,.5-.5l2.8.7V12.313h-2.9a.414.414,0,0,1-.414-.414V9H11V30.536H26.738v-4.1l-.5.631a.414.414,0,0,1-.323.156ZM13.485,11.485H22.6v.828H13.485Zm-1.657,1.657H25.91v.828H11.828Zm0,1.657H25.91v.828H11.828Zm0,1.657H25.91v.828H11.828Zm0,1.657H22.6v.828H11.828Zm0,1.657H22.6V20.6H11.828Zm0,1.657H22.6v.828H11.828ZM25.91,28.88H15.142v-.828H25.91Z" transform="translate(-4.687 -3.515)" />
+                      </g>
+                    </svg>
+                    
+
+
+                    Com criação de conteúdos textuais
+                  </div>
+
+                  <div class="input-group-text border-0 bg-transparent">
+                    <input id="input" type="checkbox" class="cursor-pointer text-purple changeInput">
+                  </div>
+                </div>
+
+                <div class="card rounded-0 border-top-0">
+                  <div class="card-body">
+                    Pretende que todos os conteúdos textuais a ser implementados na loja online sejam realizados pela Incommun?
+                  </div>
+                </div>
+              </div>
+
+              <div class="my-5">
+                <div class="input-js input-group input-group-lg border cursor-pointer bg-checkBoxPurple bg-checkBox">
+                  <div class="changeFormControl form-control border-0 bg-transparent">
+                   
+                    <svg class="colorIconPurple iconCheckBox" xmlns="http://www.w3.org/2000/svg" width="24" height="20.017" viewBox="0 0 24 20.017">
+                      <g id="_26_Web_hosting" data-name="26 Web hosting" transform="translate(-2 -7)">
+                        <path id="Caminho_57" data-name="Caminho 57" d="M46.494,22.785V21.4a7.405,7.405,0,0,0-.958,1.3C45.837,22.742,46.157,22.77,46.494,22.785Z" transform="translate(-26.085 -8.624)" />
+                        <path id="Caminho_58" data-name="Caminho 58" d="M44.171,34.656a11.5,11.5,0,0,1,1.219-.1V33H43.73a6.042,6.042,0,0,0,.441,1.656Z" transform="translate(-24.987 -15.563)" />
+                        <path id="Caminho_59" data-name="Caminho 59" d="M50,21.573V22.9c.277-.007.564-.029.856-.06A8.862,8.862,0,0,0,50,21.573Z" transform="translate(-28.645 -8.727)" />
+                        <path id="Caminho_60" data-name="Caminho 60" d="M43.668,28.353h1.684V26.794a12.321,12.321,0,0,1-1.32-.124A5.056,5.056,0,0,0,43.668,28.353Z" transform="translate(-24.949 -11.774)" />
+                        <path id="Caminho_61" data-name="Caminho 61" d="M36.858,35.373a15.513,15.513,0,0,1,1.835-.582A6.686,6.686,0,0,1,38.252,33h-2.2a5.016,5.016,0,0,0,.807,2.373Z" transform="translate(-20.368 -15.549)" />
+                        <path id="Caminho_62" data-name="Caminho 62" d="M55.418,34.824a8.339,8.339,0,0,1,1.731.551A5.016,5.016,0,0,0,57.956,33H55.772a5.8,5.8,0,0,1-.354,1.824Z" transform="translate(-31.956 -15.549)" />
+                        <path id="Caminho_63" data-name="Caminho 63" d="M51.22,26.746a11.4,11.4,0,0,1-1.22.1V28.4h1.66a6.04,6.04,0,0,0-.439-1.653Z" transform="translate(-28.645 -11.82)" />
+                        <path id="Caminho_64" data-name="Caminho 64" d="M36.858,24.893a5.016,5.016,0,0,0-.807,2.374h2.185a5.8,5.8,0,0,1,.354-1.824A6.268,6.268,0,0,1,36.858,24.893Z" transform="translate(-20.37 -10.701)" />
+                        <path id="Caminho_65" data-name="Caminho 65" d="M46.654,40.347V39.024c-.277.007-.564.029-.856.06A8.859,8.859,0,0,0,46.654,40.347Z" transform="translate(-26.244 -19.177)" />
+                        <path id="Caminho_66" data-name="Caminho 66" d="M42.515,19.1a5.039,5.039,0,0,0-3.152,1.636,10.267,10.267,0,0,0,1.583.431,8.384,8.384,0,0,1,1.57-2.066Z" transform="translate(-22.337 -7.238)" />
+                        <path id="Caminho_67" data-name="Caminho 67" d="M39.369,39.961a5.039,5.039,0,0,0,3.16,1.635,9.457,9.457,0,0,1-1.483-2.1,9.7,9.7,0,0,0-1.677.47Z" transform="translate(-22.34 -19.438)" />
+                        <path id="Caminho_68" data-name="Caminho 68" d="M50.527,41.652a5.04,5.04,0,0,0,3.152-1.635,10.265,10.265,0,0,0-1.582-.431A8.384,8.384,0,0,1,50.527,41.652Z" transform="translate(-28.966 -19.496)" />
+                        <path id="Caminho_69" data-name="Caminho 69" d="M53.661,20.728a5.039,5.039,0,0,0-3.16-1.634,9.457,9.457,0,0,1,1.482,2.1,9.706,9.706,0,0,0,1.677-.47Z" transform="translate(-28.951 -7.235)" />
+                        <path id="Caminho_70" data-name="Caminho 70" d="M50,39.043v1.381a7.406,7.406,0,0,0,.958-1.3c-.3-.038-.62-.066-.958-.08Z" transform="translate(-28.645 -19.186)" />
+                        <path id="Caminho_71" data-name="Caminho 71" d="M51.684,33H50v1.561a12.3,12.3,0,0,1,1.32.123A5.056,5.056,0,0,0,51.684,33Z" transform="translate(-28.645 -15.562)" />
+                        <path id="Caminho_72" data-name="Caminho 72" d="M55.595,27.267h2.2a5.016,5.016,0,0,0-.807-2.374,7.644,7.644,0,0,1-1.834.585,6.685,6.685,0,0,1,.44,1.789Z" transform="translate(-31.796 -10.701)" />
+                        <path id="Caminho_73" data-name="Caminho 73" d="M34.411,13.777a.389.389,0,1,0-.374-.389A.389.389,0,0,0,34.411,13.777Z" transform="translate(-19.199 -3.668)" />
+                        <path id="Caminho_74" data-name="Caminho 74" d="M27.411,13.777a.389.389,0,1,0-.374-.389A.389.389,0,0,0,27.411,13.777Z" transform="translate(-15.004 -3.668)"/>
+                        <path id="Caminho_75" data-name="Caminho 75" d="M8,13h5.442v.777H8Z" transform="translate(-3.668 -3.668)" />
+                        <path id="Caminho_76" data-name="Caminho 76" d="M8,31h5.442v.777H8Z" transform="translate(-3.668 -14.38)" />
+                        <path id="Caminho_77" data-name="Caminho 77" d="M27.411,31.777a.389.389,0,1,0-.374-.389A.389.389,0,0,0,27.411,31.777Z" transform="translate(-15.004 -14.38)" />
+                        <path id="Caminho_78" data-name="Caminho 78" d="M34.411,49a.389.389,0,1,0,.374.389A.389.389,0,0,0,34.411,49Z" transform="translate(-19.199 -25.093)" />
+                        <path id="Caminho_79" data-name="Caminho 79" d="M16.318,21.412H10.162v-1.6h4.953a6.074,6.074,0,0,1-.566-1.639,1.214,1.214,0,0,1,0-2.326,6.075,6.075,0,0,1,.566-1.639H10.162V12.6h6.155a5.861,5.861,0,0,1,1.182-.88,1.218,1.218,0,0,0,.048-.321V8.2A1.185,1.185,0,0,0,16.381,7H3.166A1.185,1.185,0,0,0,2,8.2v3.2a1.185,1.185,0,0,0,1.166,1.2H9.385v1.6H3.166A1.185,1.185,0,0,0,2,15.407v3.2a1.185,1.185,0,0,0,1.166,1.2H9.385v1.6H3.166A1.185,1.185,0,0,0,2,22.613v3.2a1.185,1.185,0,0,0,1.166,1.2H16.381a1.185,1.185,0,0,0,1.166-1.2v-3.2a1.218,1.218,0,0,0-.048-.321,5.861,5.861,0,0,1-1.182-.88ZM14.827,8.6a1.2,1.2,0,0,1,0,2.4A1.2,1.2,0,0,1,14.827,8.6Zm-2.721,0a1.2,1.2,0,0,1,0,2.4A1.2,1.2,0,0,1,12.106,8.6ZM3.555,10.2V9.4a.79.79,0,0,1,.777-.8H9.774a.79.79,0,0,1,.777.8v.8a.79.79,0,0,1-.777.8H4.332A.79.79,0,0,1,3.555,10.2Zm8.551,5.6a1.2,1.2,0,0,1,0,2.4A1.2,1.2,0,0,1,12.106,15.807Zm-8.551,1.6v-.8a.79.79,0,0,1,.777-.8H9.774a.79.79,0,0,1,.777.8v.8a.79.79,0,0,1-.777.8H4.332A.79.79,0,0,1,3.555,17.409Zm7,7.206a.79.79,0,0,1-.777.8H4.332a.79.79,0,0,1-.777-.8v-.8a.79.79,0,0,1,.777-.8H9.774a.79.79,0,0,1,.777.8Zm1.555.8a1.2,1.2,0,0,1,0-2.4A1.2,1.2,0,0,1,12.106,25.416Zm2.721,0a1.2,1.2,0,0,1,0-2.4A1.2,1.2,0,0,1,14.827,25.416Z" transform="translate(0 0)" />
+                        <path id="Caminho_80" data-name="Caminho 80" d="M27.411,49a.389.389,0,1,0,.374.389A.389.389,0,0,0,27.411,49Z" transform="translate(-15.004 -25.093)" />
+                        <path id="Caminho_81" data-name="Caminho 81" d="M8,49h5.442v.777H8Z" transform="translate(-3.668 -25.093)" />
+                      </g>
+                    </svg>
+                    
+
+
+                    Com alojamento
+                  </div>
+
+                  <div class="input-group-text border-0 bg-transparent">
+                    <input id="input" type="checkbox" class="cursor-pointer text-purple changeInput">
+                  </div>
+                </div>
+
+                <div class="card rounded-0 border-top-0">
+                  <div class="card-body">
+                    O alojamento web permite que a sua loja não só esteja online como atualiza regularmente o seu hardware para um melhor desempenho e maior proteção
+                  </div>
+                </div>
+              </div>
+
+              <div class="my-5">
+                <div class="input-js input-group input-group-lg border cursor-pointer bg-checkBoxPurple bg-checkBox">
+                  <div class="changeFormControl form-control border-0 bg-transparent">
+                    <svg class="colorIconPurple iconCheckBox" id="dominio" xmlns="http://www.w3.org/2000/svg" width="26.39" height="26.39" viewBox="0 0 26.39 26.39">
+                      <g id="Grupo_43" data-name="Grupo 43" transform="translate(3.299 8.246)">
+                        <g id="Grupo_42" data-name="Grupo 42">
+                          <path id="Caminho_14" data-name="Caminho 14" d="M59.077,147.675v7.147H78.87v-7.147Zm18.3,6.711-1.559-1.559a2.355,2.355,0,1,1,.777-.777l1.559,1.559Z" transform="translate(-59.077 -147.675)" />
+                        </g>
+                      </g>
+                      <g id="Grupo_45" data-name="Grupo 45">
+                        <g id="Grupo_44" data-name="Grupo 44">
+                          <path id="Caminho_15" data-name="Caminho 15" d="M0,0V4.4H26.39V0ZM17.044,2.748H2.749v-1.1H17.044Zm2.749,0h-1.1v-1.1h1.1Zm2.2,0h-1.1v-1.1h1.1Zm2.2,0h-1.1v-1.1h1.1Z" />
+                        </g>
+                      </g>
+                      <g id="Grupo_47" data-name="Grupo 47" transform="translate(17.593 10.171)">
+                        <g id="Grupo_46" data-name="Grupo 46">
+                          <path id="Caminho_16" data-name="Caminho 16" d="M317.19,182.507a1.238,1.238,0,1,0,.363.875A1.236,1.236,0,0,0,317.19,182.507Z" transform="translate(-315.077 -182.145)" />
+                        </g>
+                      </g>
+                      <g id="Grupo_49" data-name="Grupo 49" transform="translate(0 5.497)">
+                        <g id="Grupo_48" data-name="Grupo 48">
+                          <path id="Caminho_17" data-name="Caminho 17" d="M0,98.444v20.893H26.39V98.444Zm2.2,1.649H24.191v9.347H2.2Zm5.038,17.2-1.052.01L5.5,115.119,4.81,117.3l-1.052-.01-1.616-5.5,1.055-.31L4.3,115.249l.669-2.126H6.022l.669,2.126L7.8,111.484l1.055.31Zm7.7,0-1.052.01-.688-2.183-.688,2.183-1.052-.01-1.616-5.5,1.055-.31L12,115.249l.669-2.126h1.049l.669,2.126,1.107-3.765,1.055.31Zm7.7,0-1.052.01-.688-2.183L20.2,117.3l-1.052-.01-1.616-5.5,1.055-.31,1.107,3.765.669-2.126h1.049l.669,2.126,1.107-3.765,1.055.31Z" transform="translate(0 -98.444)" />
+                        </g>
+                      </g>
+                    </svg>
+                    
+
+
+                    Com domínio
+                  </div>
+
+                  <div class="input-group-text border-0 bg-transparent">
+                    <input id="input" type="checkbox" class="cursor-pointer text-purple changeInput">
+                  </div>
+                </div>
+
+                <div class="card rounded-0 border-top-0">
+                  <div class="card-body">
+                    O url do seu site será a primeira coisa que os visitantes irão ver. O domínio torna mais fácil a identificação da loja e aumenta o reconhecimento da marca e da sua empresa.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-md-5 offset-md-7 col-lg-6 offset-lg-5 text-end mb-5">
+              <button type="button" class="btn btn-transparent btn-lg rounded-0">Anterior</button>
+              <button type="button" class="btn btn-purple btn-lg rounded-0">Seguinte</button>
+            </div>
+          </div>
+
+        </div>
+        <div
+          class="col-md-12 col-lg-5 d-md-flex justify-content-center align-items-center bg-purple pt-pageRight d-none d-md-block">
+          <div class="row">
+            <div class="col-md-auto">
+              <img src="imagens/" class="img-fluid" alt="Website & Loja Online">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <!--Bootstrap JavaScript-->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/changeElements.js"></script>
+</body>
+
+</html>

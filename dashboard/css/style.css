@@ -1,42 +1,3 @@
-/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
-
-/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
-*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
-    all: unset;
-    display: revert;
-}
-
-/* Preferred box-sizing value */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-/*
-    Remove list styles (bullets/numbers)
-    in case you use it with normalize.css
-  */
-ol,
-ul {
-    list-style: none;
-}
-
-/* For images to not be able to exceed their container */
-img {
-    max-width: 100%;
-}
-
-/* Removes spacing between cells in tables */
-table {
-    border-collapse: collapse;
-}
-
-/* Revert the 'white-space' property for textarea elements on Safari */
-textarea {
-    white-space: revert;
-}
-
 /*--------------GLOBAL---------------------*/
 
 :root {
@@ -54,15 +15,143 @@ textarea {
     --incommunPurpleDark: #a46eae;
     --incommunMenu: rgba(0,0,0,.2);
     --white: #fff;
+    --black: #000;
+    --borderColor: #DDDDDD;
+    --checkBoxColor: #fbfbfb;
+    --transparent: #fefefe00;
+    --grayDashboard: #555555;
+    --grayDashboardHover: #777777;
+}
+
+body {
+    scroll-behavior: smooth;
 }
 
 .bg-yellow {
-    background-color: var(--incommunYellow);
+    background-color: var(--incommunYellow) !important;
+}
+
+.bg-orange {
+    background-color: var(--incommunOrange) !important;
+}
+
+.bg-purple {
+    background-color: var(--incommunPurple);
+}
+
+.bg-gray {
+    background-color: var(--grayDashboard) !important;
+}
+
+.bg-white {
+    background-color: var(--white) !important;
+}
+
+.bg-blue {
+    background-color: var(--incommunBlue);
 }
 
 .bg-navBar {
     background-color: var(--incommunMenu);
 }
 
+.text-black {
+    color: var(--black) !important;
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.text-yellow {
+    color: var(--incommunYellow) !important;
+}
+
+.text-orange {
+    color: var(--incommunOrange) !important;
+}
+
+.text-purple {
+    color: var(--incommunPurple) !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.font-weight-semiBold {
+    font-weight: 600;
+}
+
+.font-size-1__5rem {
+    font-size: 1.5rem;
+}
+
+.font-size-1__2rem {
+    font-size: 1.2rem;
+}
+
+.changeContainer-fluid {
+    margin-left: 280px !important;
+}
 
 /*--------------NAVBAR---------------------*/
+
+.nav-link:hover {
+    background-color: var(--grayDashboardHover) !important;
+}
+
+/*--------------checkBox hover color---------------------*/
+
+
+/*-----------botões seguinte e anterior-----------------*/
+
+.btn-yellow {
+    background-color: var(--incommunYellow) !important;
+    color: var(--white) !important;
+}
+
+.btn-yellow:hover {
+    background-color: var(--incommunYellowDark) !important;
+}
+
+.btn-orange {
+    background-color: var(--incommunOrange) !important;
+    color: var(--white) !important;
+}
+
+.btn-orange:hover {
+    background-color: var(--incommunOrangeDark) !important;
+}
+
+.btn-purple {
+    background-color: var(--incommunPurple) !important;
+    color: var(--white) !important;
+}
+
+.btn-purple:hover {
+    background-color: var(--incommunPurpleDark) !important;
+}
+
+.btn-white {
+    background-color: var(--white) !important;
+    color: var(--black) !important;
+}
+
+.btn-purple:hover {
+    background-color: var(--incommunPurpleDark) !important;
+}
+
+
+.btn-transparent {
+    background-color: rgba(0,0,0,0) !important;
+}
+
+
+/*-----------Media Query-----------------*/
+
+@media only screen and (max-width: 600px) {
+    .font-size-1__5rem {
+      font-size: 1.1rem;
+    }
+}
