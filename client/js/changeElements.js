@@ -144,5 +144,7 @@ function teste() {
 
     } else {
         checkBox[1].classList.add("d-none");
+        document.getElementById("checkBoxWebsite").classList.remove("col-lg-5");
+        document.getElementById("checkBoxWebsite").classList.add("col-lg-10");
     }
 }
