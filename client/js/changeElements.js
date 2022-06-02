@@ -134,17 +134,32 @@ function somar() {
 
 //--------------------------------
 
-//var checkBox = document.getElementsByClassName("input-js");
-//var formControl = document.getElementsByClassName("changeFormControl");
-//var inputBox = document.getElementsByClassName("changeInput");
-
-function teste() {
+function disableLandingPage() {
     if(inputBox[0].checked === true) {
-        checkBox[1].classList.remove("d-none");
+        document.getElementById("checkBoxLandingPage").classList.remove("d-none");
 
+        document.getElementById("checkBoxWebsite").classList.add("col-lg-5");
+        document.getElementById("checkBoxWebsite").classList.remove("col-lg-10");
     } else {
-        checkBox[1].classList.add("d-none");
+        document.getElementById("checkBoxLandingPage").classList.add("d-none");
+
         document.getElementById("checkBoxWebsite").classList.remove("col-lg-5");
         document.getElementById("checkBoxWebsite").classList.add("col-lg-10");
+    }
+}
+
+function disableWebsite() {
+    if(inputBox[1].checked === true) {
+        document.getElementById("checkBoxWebsite").classList.remove("d-none");
+
+        document.getElementById("checkBoxLandingPage").classList.add("col-lg-5");
+        document.getElementById("checkBoxLandingPage").classList.remove("col-lg-10");
+        document.getElementById("checkBoxLandingPage").classList.remove("offset-lg-1");
+    } else {
+        document.getElementById("checkBoxWebsite").classList.add("d-none");
+
+        document.getElementById("checkBoxLandingPage").classList.remove("col-lg-5");
+        document.getElementById("checkBoxLandingPage").classList.add("col-lg-10");
+        document.getElementById("checkBoxLandingPage").classList.add("offset-lg-1");
     }
 }
