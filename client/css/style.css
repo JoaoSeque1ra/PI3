@@ -23,6 +23,7 @@
 }
 
 body {
+    font-family: 'Poppins', sans-serif !important;
     scroll-behavior: smooth;
 }
 
@@ -84,6 +85,14 @@ body {
 
 .font-size-1__5rem {
     font-size: 1.5rem;
+}
+
+.font-size-4__rem{
+    font-size: 4rem;
+}
+
+.text-weight-black {
+    font-weight: 900;
 }
 
 /*--------------NAVBAR---------------------*/
@@ -265,3 +274,12 @@ input[type="checkbox"]:checked::after {
 .bg-blue{
     background-color: #8fb5c7 !important;
 }
+
+b{
+    position:relative;
+    color:transparent;
+    -webkit-text-stroke: 1px white;
+    padding: 0%;
+
+}
+
