@@ -19,6 +19,7 @@
     --borderColor: #DDDDDD;
     --cardColorOpacity: #dddddd49;
     --checkBoxColor: #fbfbfb;
+    --checkBoxColorDisable: #c9c9c9;
     --transparent: #fefefe00;
 }
 
@@ -57,6 +58,10 @@ body {
 
 .bg-navBar {
     background-color: var(--incommunMenu);
+}
+
+.bg-disable {
+    background-color: var(--checkBoxColorDisable);
 }
 
 .text-black {
@@ -127,6 +132,39 @@ body {
     border-radius: 0;
 }
 
+/*--------------Icons checkBox---------------------*/
+
+.colorIconOrange {
+    fill: var(--incommunOrangeDark);
+}
+
+.colorIconYellow {
+    fill: var(--incommunYellow);
+}
+
+.colorIconPurple {
+    fill: var(--incommunPurple);
+}
+
+.colorIconWhite {
+    fill: var(--white);
+}
+
+/*Hover do icons*/
+.bg-checkBox:hover .colorIconPurple{
+    fill: var(--white);
+}
+
+.bg-checkBox:hover .colorIconYellow{
+    fill: var(--white);
+}
+
+.bg-checkBox:hover .colorIconOrange{
+    fill: var(--white);
+}
+
+
+
 /*--------------checkBox hover color---------------------*/
 
 .bg-checkBoxYellow:hover {
@@ -183,6 +221,12 @@ input[type="checkbox"]::after {
 
 input[type="checkbox"]:checked::after {
     display: block;
+}
+
+/*--------------Mais e menos---------------------*/
+
+.bg-transparent p {
+    margin-bottom: 0;
 }
 
 /*-----------botões seguinte e anterior-----------------*/
@@ -256,3 +300,42 @@ input[type="checkbox"]:checked::after {
       font-size: 1.1rem;
     }
 }
+
+
+/*Página Final*/
+
+
+.fundo-obrigada{
+    position:relative;
+    color:transparent;
+    text-align: center;
+    -webkit-text-stroke: 1px white;
+    font-size: 100px;
+    padding: 0%;
+    margin-top: 15%;
+    
+
+    
+
+}
+
+.texto-fundo{
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 0%;
+    font-size: 150%;
+}
+
+.bg-blue{
+    background-color: #8fb5c7 !important;
+}
+
+b{
+    position:relative;
+    color:transparent;
+    -webkit-text-stroke: 1px white;
+    padding: 0%;
+
+}
+

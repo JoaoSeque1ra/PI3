@@ -19,10 +19,14 @@
     --borderColor: #DDDDDD;
     --checkBoxColor: #fbfbfb;
     --transparent: #fefefe00;
+    --grayDashboard: #555555;
+    --grayDashboardHover: #777777;
+    --cardsColorDashboard: hsla(0, 0%, 0%, 0.03);
 }
 
 body {
     scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 .bg-yellow {
@@ -35,6 +39,22 @@ body {
 
 .bg-purple {
     background-color: var(--incommunPurple);
+}
+
+.bg-gray {
+    background-color: var(--grayDashboard) !important;
+}
+
+.bg-cardsDashboard {
+    background-color: var(--cardsColorDashboard) !important;
+}
+
+.bg-white {
+    background-color: var(--white) !important;
+}
+
+.bg-blue {
+    background-color: var(--incommunBlue);
 }
 
 .bg-navBar {
@@ -61,16 +81,12 @@ body {
     color: var(--incommunPurple) !important;
 }
 
+.text-gray {
+    color: var(--grayDashboardHover);
+}
+
 .cursor-pointer {
     cursor: pointer;
-}
-
-.pt-pageLeft {
-    padding-top: 9rem !important;
-}
-
-.pt-pageRight {
-    padding-top: 6rem !important;
 }
 
 .font-weight-semiBold {
@@ -81,74 +97,34 @@ body {
     font-size: 1.5rem;
 }
 
+.font-size-1__2rem {
+    font-size: 1.2rem;
+}
+
+.changeContainer-fluid {
+    margin-left: 280px !important;
+}
+
+.h-70px {
+    height: 70px;
+}
+
+.vh-35 {
+    height: 35vh;
+}
+
 /*--------------NAVBAR---------------------*/
 
-.navbar {
-    padding: 30px 50px !important;
+.nav-link:hover {
+    background-color: var(--grayDashboardHover) !important;
 }
 
-.navbar-toggler {
-    border: 0 !important;
-    color: var(--white) !important;
-}
-
-/*--------------Opções---------------------*/
-/*--------------checkBox---------------------*/
-
-.bg-checkBox {
-    background-color: var(--checkBoxColor) !important;
-    border-radius: 0;
+.active {
+    background-color: var(--grayDashboardHover) !important;
 }
 
 /*--------------checkBox hover color---------------------*/
 
-.bg-checkBoxYellow:hover {
-    background-color: var(--incommunYellowDark) !important;
-}
-
-.bg-checkBoxYellow:hover .form-control {
-    color: var(--white) !important;
-}
-
-.bg-checkBoxOrange:hover {
-    background-color: var(--incommunOrangeDark) !important;
-}
-
-.bg-checkBoxOrange:hover .form-control {
-    color: var(--white) !important;
-}
-
-.bg-checkBoxPurple:hover {
-    background-color: var(--incommunPurpleDark) !important;
-}
-
-.bg-checkBoxPurple:hover .form-control {
-    color: var(--white) !important;
-}
-
-input[type="checkbox"] {
-    height: 18px;
-    width: 18px;
-    appearance: none;
-    background-color: var(--white);
-    border: var(--borderColor) 1px solid;
-    border-radius: 3px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-input[type="checkbox"]::after {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 600;
-    font-size: 15px;
-    content: "\f00c";
-    display: none;
-}
-
-input[type="checkbox"]:checked::after {
-    display: block;
-}
 
 /*-----------botões seguinte e anterior-----------------*/
 
@@ -179,15 +155,27 @@ input[type="checkbox"]:checked::after {
     background-color: var(--incommunPurpleDark) !important;
 }
 
-.btn-transparent {
-    background-color: rgba(0,0,0,0) !important;
+.btn-white {
+    background-color: var(--white) !important;
+    color: var(--black) !important;
 }
 
+.btn-purple:hover {
+    background-color: var(--incommunPurpleDark) !important;
+}
 
-/*-----------Media Query-----------------*/
+.btn-gray {
+    background-color: var(--grayDashboard) !important;
+}
 
-@media only screen and (max-width: 600px) {
-    .font-size-1__5rem {
-      font-size: 1.1rem;
-    }
+.btn-gray:hover {
+    background-color: var(--grayDashboardHover) !important;
+}
+
+.btn-gray a {
+    color: var(--white) !important;
+}
+
+.btn-transparent {
+    background-color: rgba(0,0,0,0) !important;
 }

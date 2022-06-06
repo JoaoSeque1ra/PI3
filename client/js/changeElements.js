@@ -1,6 +1,17 @@
-var checkBox = document.getElementsByClassName("input-group");
-var formControl = document.getElementsByClassName("form-control");
-var inputBox = document.getElementsByClassName("changeInput");
+var checkBox, formControl, inputBox, icon;
+var numeroPagina = 1;
+
+function lerCheckBox() {
+    checkBox = document.getElementsByClassName("input-js");
+    formControl = document.getElementsByClassName("changeFormControl");
+    inputBox = document.getElementsByClassName("changeInput");
+    icon = document.getElementsByClassName("iconCheckBox");
+
+    console.log("passei aqui");
+}
+
+lerCheckBox();
+
 var flag = 0, flag1 = 0, flag2 = 0, flag3 = 0, flag4 = 0, flag5 = 0, flag6 = 0;
 
 var getBody = document.getElementsByTagName("body");
@@ -90,6 +101,7 @@ function turnOn(index, bgColor) {
     checkBox[index].classList.remove("bg-checkBox");
     formControl[index].classList.add("text-white");
     inputBox[index].checked = true;
+    icon[index].classList.add("colorIconWhite");
 }
 
 function turnOff(index, bgColor) {
@@ -97,4 +109,57 @@ function turnOff(index, bgColor) {
     checkBox[index].classList.add("bg-checkBox");
     formControl[index].classList.remove("text-white");
     inputBox[index].checked = false;
+    icon[index].classList.remove("colorIconWhite");
+}
+
+//--------------------------------
+
+function subtrair() {
+    if(numeroPagina < 2)
+        alert("Número de pagina máximo atingido");
+    else {
+        numeroPagina--;
+        document.getElementById("number").innerHTML = numeroPagina;
+    }
+}
+
+function somar() {
+    if(numeroPagina > 11)
+        alert("Número de pagina mínimo atingido");
+    else {
+        numeroPagina++;
+        document.getElementById("number").innerHTML = numeroPagina;
+    }
+}
+
+//--------------------------------
+
+function disableLandingPage() {
+    if(inputBox[0].checked === true) {
+        document.getElementById("checkBoxLandingPage").classList.remove("d-none");
+
+        document.getElementById("checkBoxWebsite").classList.add("col-lg-5");
+        document.getElementById("checkBoxWebsite").classList.remove("col-lg-10");
+    } else {
+        document.getElementById("checkBoxLandingPage").classList.add("d-none");
+
+        document.getElementById("checkBoxWebsite").classList.remove("col-lg-5");
+        document.getElementById("checkBoxWebsite").classList.add("col-lg-10");
+    }
+}
+
+function disableWebsite() {
+    if(inputBox[1].checked === true) {
+        document.getElementById("checkBoxWebsite").classList.remove("d-none");
+
+        document.getElementById("checkBoxLandingPage").classList.add("col-lg-5");
+        document.getElementById("checkBoxLandingPage").classList.remove("col-lg-10");
+        document.getElementById("checkBoxLandingPage").classList.remove("offset-lg-1");
+    } else {
+        document.getElementById("checkBoxWebsite").classList.add("d-none");
+
+        document.getElementById("checkBoxLandingPage").classList.remove("col-lg-5");
+        document.getElementById("checkBoxLandingPage").classList.add("col-lg-10");
+        document.getElementById("checkBoxLandingPage").classList.add("offset-lg-1");
+    }
 }
