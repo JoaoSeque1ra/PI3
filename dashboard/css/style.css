@@ -61,6 +61,10 @@ body {
     background-color: var(--incommunMenu);
 }
 
+.bg-grayHover {
+    background-color: var(--grayDashboardHover);
+}
+
 .text-black {
     color: var(--black) !important;
 }
@@ -93,14 +97,6 @@ body {
     font-weight: 600;
 }
 
-.font-size-1__5rem {
-    font-size: 1.5rem;
-}
-
-.font-size-1__2rem {
-    font-size: 1.2rem;
-}
-
 .changeContainer-fluid {
     margin-left: 280px !important;
 }
@@ -119,9 +115,22 @@ body {
     background-color: var(--grayDashboardHover) !important;
 }
 
+.dropdown-item:hover {
+    background-color: var(--grayDashboardHover) !important;
+}
+
 .active {
     background-color: var(--grayDashboardHover) !important;
 }
+
+.barNav {
+    position: absolute;
+    top: 0;
+    left: 341px;
+    border-left: 2px solid var(--grayDashboardHover);
+    height: 100%;
+}
+
 
 /*--------------checkBox hover color---------------------*/
 
