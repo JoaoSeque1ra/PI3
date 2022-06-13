@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Incommun - Dashboard Comunicação e Consultoria</title>
+    <title>Incommun - Dashboard Editar Cliente</title>
 
     <!--Nosso CSS-->
     <link rel="stylesheet" href="css/style.css">
@@ -83,8 +83,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#"
-                                        class="nav-link rounded-0 rounded-start fw-normal text-white ps-5"
+                                    <a href="#" class="nav-link rounded-0 rounded-start fw-normal text-white ps-5"
                                         aria-current="page">
                                         <svg id="draw_white_24dp" xmlns="http://www.w3.org/2000/svg" width="22"
                                             height="22" viewBox="0 0 24 24">
@@ -98,7 +97,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link rounded-0 rounded-start fw-normal text-white ps-5 active"
+                                    <a href="#" class="nav-link rounded-0 rounded-start fw-normal text-white ps-5"
                                         aria-current="page">
                                         <svg id="public_white_24dp" xmlns="http://www.w3.org/2000/svg" width="22"
                                             height="22" viewBox="0 0 24 24">
@@ -347,7 +346,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link rounded-0 rounded-start fw-normal text-white ps-5 active"
+                            <a href="#" class="nav-link rounded-0 rounded-start fw-normal text-white ps-5"
                                 aria-current="page">
                                 <svg id="rate_review_white_24dp" xmlns="http://www.w3.org/2000/svg" width="22"
                                     height="22" viewBox="0 0 24 24">
@@ -517,7 +516,7 @@
                     <div class="row">
 
                         <div class="col-8 font-weight-semiBold fs-4 text-gray">
-                            Preços / <span class="font-weight-bold text-dark">Comunicação & Consultoria</span>
+                            <span class="font-weight-bold text-dark">Editar Cliente</span>
                         </div>
 
                         <div class="col-4 text-end">
@@ -531,77 +530,99 @@
                             </button>
                         </div>
 
-                        <div class="col-12 mt-5">
-                            <div class="row gx-5">
+                        <div class="col-12 mt-5 bg-cardsDashboard">
 
-                                <div class="col-12 col-lg-6">
-                                    <div class="row py-4 bg-cardsDashboard h-100">
-                                        <div class="col-md-12 col-lg-4 fs-5 font-weight-semiBold text-break">
-                                            1.Marketing
-                                        </div>
-                
-                                        <div class="col-md-12 col-lg-4 ms-lg-1 pe-2 text-end">
-                                            <div class="input-group mb-3">
-                                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
-                                                    placeholder="0,00&#8364;">
-                                            </div>
-                                        </div>
-                                    </div>
+                            <from class="row py-4">
+                                <div class="col-lg-2 mb-3 pb-3">
+                                    <label for="nomeCLiente" class="form-label">Nome:</label>
+                                </div>
+                                <div class="col-lg-9">
+                                    <input type="nomeCLiente" class="form-control" id="nomeCLiente"
+                                        aria-describedby="nomeCliente" value="Marcelo Machado">
                                 </div>
 
-                                <div class="col-12 mt-5 col-lg-6 mt-lg-0">
-                                    <div class="row py-4 bg-cardsDashboard h-100">
-                                        <div class="col-md-12 col-lg-4 fs-5 font-weight-semiBold text-break">
-                                            2.Comunicação
-                                        </div>
-                
-                                        <div class="col-md-12 col-lg-4 ms-lg-1 pe-2 text-end">
-                                            <div class="input-group mb-3">
-                                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
-                                                    placeholder="0,00&#8364;">
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="w-100"></div>
+
+                                <div class="col-lg-2 mb-3 pb-3">
+                                    <label for="empresaCLiente" class="form-label">Empresa:</label>
+                                </div>
+                                <div class="col-lg-9">
+                                    <input type="empresaCLiente" class="form-control" id="empresaCLiente"
+                                        aria-describedby="empresaCLiente" value="">
                                 </div>
 
-                            </div>
-                        </div>
-                        
+                                <div class="w-100"></div>
 
-                        <div class="col-12 mt-5">
-                            <div class="row gx-5">
-
-                                <div class="col-12 col-lg-6">
-                                    <div class="row py-4 bg-cardsDashboard h-100">
-                                        <div class="col-md-12 col-lg-4 fs-5 font-weight-semiBold text-break">
-                                            3.Evento
-                                        </div>
-                
-                                        <div class="col-md-12 col-lg-4 ms-lg-1 pe-2 text-end">
-                                            <div class="input-group mb-3">
-                                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
-                                                    placeholder="0,00&#8364;">
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="col-lg-2 mb-3 pb-3">
+                                    <label for="moradaCLiente" class="form-label">Morada:</label>
+                                </div>
+                                <div class="col-lg-9">
+                                    <input type="moradaCLiente" class="form-control" id="moradaCLiente"
+                                        aria-describedby="moradaCLiente" value="Rua do Bom Jesus, 45 - A">
                                 </div>
 
-                                <div class="col-12 mt-5 col-lg-6 mt-lg-0">
-                                    <div class="row py-4 bg-cardsDashboard h-100">
-                                        <div class="col-md-12 col-lg-4 fs-5 font-weight-semiBold text-break">
-                                            4.Assessoria
-                                        </div>
-                
-                                        <div class="col-md-12 col-lg-4 ms-lg-1 pe-2 text-end">
-                                            <div class="input-group mb-3">
-                                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
-                                                    placeholder="0,00&#8364;">
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="w-100"></div>
+
+                                <div class="col-lg-2 mb-3 pb-3">
+                                    <label for="cidadeCLiente" class="form-label">Cidade:</label>
+                                </div>
+                                <div class="col-lg-9">
+                                    <input type="cidadeCLiente" class="form-control" id="cidadeCLiente"
+                                        aria-describedby="cidadeCLiente" value="Braga">
                                 </div>
 
-                            </div>
+                                <div class="w-100"></div>
+
+                                <div class="col-lg-2 mb-3 pb-3">
+                                    <label for="codigoPostalCliente" class="form-label">Codigo Postal:</label>
+                                </div>
+                                <div class="col-lg-9">
+                                    <input type="codigoPostalCliente" class="form-control" id="codigoPostalCliente"
+                                        aria-describedby="codigoPostalCliente" value="4700-005">
+                                </div>
+
+                                <div class="w-100"></div>
+
+                                <div class="col-lg-2 mb-3 pb-3">
+                                    <label for="paisCliente" class="form-label">Pais:</label>
+                                </div>
+                                <div class="col-lg-9">
+                                    <input type="paisCliente" class="form-control" id="paisCliente"
+                                        aria-describedby="paisCliente" value="Portugal">
+                                </div>
+
+                                <div class="w-100"></div>
+
+                                <div class="col-lg-2 mb-3 pb-3">
+                                    <label for="telefoneCliente" class="form-label">Telefone:</label>
+                                </div>
+                                <div class="col-lg-9">
+                                    <input type="telefoneCliente" class="form-control" id="telefoneCliente"
+                                        aria-describedby="telefoneCliente" value="964342988">
+                                </div>
+
+                                <div class="w-100"></div>
+
+                                <div class="col-lg-2 mb-3 pb-3">
+                                    <label for="emailCliente" class="form-label">Email:</label>
+                                </div>
+                                <div class="col-lg-9">
+                                    <input type="emailCliente" class="form-control" id="emailCliente"
+                                        aria-describedby="emailCliente" value="mmachado@gmail.com">
+                                </div>
+
+                                <div class="w-100"></div>
+                                
+                                <div class="col-lg-2 mb-3 pb-3">
+                                    <label for="nifCliente" class="form-label">Nif:</label>
+                                </div>
+                                <div class="col-lg-9">
+                                    <input type="nifCliente" class="form-control" id="nifCliente"
+                                        aria-describedby="nifCliente" value="186590111">
+                                </div>
+
+                            </from>
+
                         </div>
 
                     </div>
