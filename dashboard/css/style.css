@@ -97,6 +97,10 @@ body {
     font-weight: 600;
 }
 
+.font-weight-medium {
+    font-weight: 500;
+}
+
 .changeContainer-fluid {
     margin-left: 280px !important;
 }
