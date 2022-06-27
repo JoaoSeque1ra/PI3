@@ -142,6 +142,11 @@ body {
 
 /*--------------checkBox hover color---------------------*/
 
+input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+}
+
 
 /*-----------botões seguinte e anterior-----------------*/
 
@@ -199,10 +204,4 @@ body {
 
 .page-link {
     color: var(--black) !important;
-}
-
-.page-item.active .page-link {
-    background-color: var(--grayDashboardHover) !important;
-    color: var(--white) !important;
-    border-color: var(--grayDashboardHover) !important;
 }
