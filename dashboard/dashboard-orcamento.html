@@ -533,12 +533,12 @@
                                     </form>
                                 </div>
         
-                                <div class="col-6 pt-3 pt-lg-0 text-lg-end">
+                                <div class="col-12 col-lg-6 pt-3 pt-lg-0 text-lg-end">
                                     <button type="button" class="btn btn-gray btn-lg rounded-0">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
                                             <path id="Caminho_526" data-name="Caminho 526" d="M19,3H5A2,2,0,0,0,3,5V19a2,2,0,0,0,2,2H19a2.006,2.006,0,0,0,2-2V5A2.006,2.006,0,0,0,19,3ZM17,13H13v4H11V13H7V11h4V7h2v4h4Z" transform="translate(-3 -3)" fill="#fff"/>
                                         </svg>                                                                   
-                                        <a href="" class="text-decoration-none d-none d-sm-inline ps-2">Novo Orçamento</a>
+                                        <a href="" class="text-decoration-none ps-2">Novo Orçamento</a>
                                     </button>
                                 </div>
 
@@ -548,21 +548,649 @@
                         <div class="col-12">
                             <div class="row pt-5">
 
-                                <div class="table-responsive">
-                                    <table class="table table-hover">
+                                <div class="table-responsive d-flex d-lg-none">
+                                    <table class="table table-hover table-striped">
 
-                                        <thead class="text-center">
+                                        <thead>
                                             <tr>
-                                              <th scope="col fw-light">Orçamento</th>
-                                              <th scope="col">Nome</th>
-                                              <th scope="col">Data</th>
-                                              <th scope="col">Estado</th>
-                                              <th scope="col">Total</th>
-                                              <th scope="col">Ações</th>
+                                              <th class="fw-light" scope="col">Orçamento</th>
+                                              <th class="fw-light" scope="col">Nome</th>
+                                              <th class="fw-light text-end" scope="col">Total</th>
+                                              <th class="fw-light text-end" scope="col">Ações</th>
                                             </tr>
-                                          </thead>
+                                        </thead>
 
+                                        <tbody class="align-middle">
+                                            <tr>
+                                                <th class="fw-normal" scope="row">#0088</th>
+                                                <td>Marcelo Machado</td>
+                                                <td>50,00€</td>
+                                                <td>
+                                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18.132" height="15" viewBox="0 0 18.132 15">
+                                                                    <path id="Caminho_367" data-name="Caminho 367" d="M3,10H14v2H3ZM3,8H14V6H3Zm0,8h7V14H3Zm15.01-3.13.71-.71a1,1,0,0,1,1.41,0l.71.71a1,1,0,0,1,0,1.41l-.71.71Zm-.71.71L12,18.88V21h2.12l5.3-5.3Z" transform="translate(-3 -6)" fill="#555"/>
+                                                                </svg>
+                                                            </button>
+                                                        </a>
+                                                        
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="15" viewBox="0 0 22 15">
+                                                                    <path id="Caminho_519" data-name="Caminho 519" d="M12,4.5A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5ZM12,17a5,5,0,1,1,5-5A5,5,0,0,1,12,17Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,12,9Z" transform="translate(-1 -4.5)" fill="#555"/>
+                                                                </svg>  
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th class="fw-normal" scope="row">#0087</th>
+                                                <td>Antonio Rodrigues</td>
+                                                <td class="text-end">100,00€</td>
+                                                <td class="text-end">
+                                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18.132" height="15" viewBox="0 0 18.132 15">
+                                                                    <path id="Caminho_367" data-name="Caminho 367" d="M3,10H14v2H3ZM3,8H14V6H3Zm0,8h7V14H3Zm15.01-3.13.71-.71a1,1,0,0,1,1.41,0l.71.71a1,1,0,0,1,0,1.41l-.71.71Zm-.71.71L12,18.88V21h2.12l5.3-5.3Z" transform="translate(-3 -6)" fill="#555"/>
+                                                                </svg>
+                                                            </button>
+                                                        </a>
+                                                        
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="15" viewBox="0 0 22 15">
+                                                                    <path id="Caminho_519" data-name="Caminho 519" d="M12,4.5A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5ZM12,17a5,5,0,1,1,5-5A5,5,0,0,1,12,17Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,12,9Z" transform="translate(-1 -4.5)" fill="#555"/>
+                                                                </svg>  
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th class="fw-normal" scope="row">#0086</th>
+                                                <td>Rui Matias</td>
+                                                <td>450,00€</td>
+                                                <td>
+                                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18.132" height="15" viewBox="0 0 18.132 15">
+                                                                    <path id="Caminho_367" data-name="Caminho 367" d="M3,10H14v2H3ZM3,8H14V6H3Zm0,8h7V14H3Zm15.01-3.13.71-.71a1,1,0,0,1,1.41,0l.71.71a1,1,0,0,1,0,1.41l-.71.71Zm-.71.71L12,18.88V21h2.12l5.3-5.3Z" transform="translate(-3 -6)" fill="#555"/>
+                                                                </svg>
+                                                            </button>
+                                                        </a>
+                                                        
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="15" viewBox="0 0 22 15">
+                                                                    <path id="Caminho_519" data-name="Caminho 519" d="M12,4.5A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5ZM12,17a5,5,0,1,1,5-5A5,5,0,0,1,12,17Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,12,9Z" transform="translate(-1 -4.5)" fill="#555"/>
+                                                                </svg>  
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th class="fw-normal" scope="row">#0085</th>
+                                                <td>Mario Guerreiro</td>
+                                                <td>1.500,00€</td>
+                                                <td>
+                                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18.132" height="15" viewBox="0 0 18.132 15">
+                                                                    <path id="Caminho_367" data-name="Caminho 367" d="M3,10H14v2H3ZM3,8H14V6H3Zm0,8h7V14H3Zm15.01-3.13.71-.71a1,1,0,0,1,1.41,0l.71.71a1,1,0,0,1,0,1.41l-.71.71Zm-.71.71L12,18.88V21h2.12l5.3-5.3Z" transform="translate(-3 -6)" fill="#555"/>
+                                                                </svg>
+                                                            </button>
+                                                        </a>
+                                                        
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="15" viewBox="0 0 22 15">
+                                                                    <path id="Caminho_519" data-name="Caminho 519" d="M12,4.5A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5ZM12,17a5,5,0,1,1,5-5A5,5,0,0,1,12,17Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,12,9Z" transform="translate(-1 -4.5)" fill="#555"/>
+                                                                </svg>  
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th class="fw-normal" scope="row">#0084</th>
+                                                <td>Ana Batista</td>
+                                                <td>850,00€</td>
+                                                <td>
+                                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18.132" height="15" viewBox="0 0 18.132 15">
+                                                                    <path id="Caminho_367" data-name="Caminho 367" d="M3,10H14v2H3ZM3,8H14V6H3Zm0,8h7V14H3Zm15.01-3.13.71-.71a1,1,0,0,1,1.41,0l.71.71a1,1,0,0,1,0,1.41l-.71.71Zm-.71.71L12,18.88V21h2.12l5.3-5.3Z" transform="translate(-3 -6)" fill="#555"/>
+                                                                </svg>
+                                                            </button>
+                                                        </a>
+                                                        
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="15" viewBox="0 0 22 15">
+                                                                    <path id="Caminho_519" data-name="Caminho 519" d="M12,4.5A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5ZM12,17a5,5,0,1,1,5-5A5,5,0,0,1,12,17Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,12,9Z" transform="translate(-1 -4.5)" fill="#555"/>
+                                                                </svg>  
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th class="fw-normal" scope="row">#0083</th>
+                                                <td>Tiago Pinto</td>
+                                                <td>450,00€</td>
+                                                <td>
+                                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18.132" height="15" viewBox="0 0 18.132 15">
+                                                                    <path id="Caminho_367" data-name="Caminho 367" d="M3,10H14v2H3ZM3,8H14V6H3Zm0,8h7V14H3Zm15.01-3.13.71-.71a1,1,0,0,1,1.41,0l.71.71a1,1,0,0,1,0,1.41l-.71.71Zm-.71.71L12,18.88V21h2.12l5.3-5.3Z" transform="translate(-3 -6)" fill="#555"/>
+                                                                </svg>
+                                                            </button>
+                                                        </a>
+                                                        
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="15" viewBox="0 0 22 15">
+                                                                    <path id="Caminho_519" data-name="Caminho 519" d="M12,4.5A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5ZM12,17a5,5,0,1,1,5-5A5,5,0,0,1,12,17Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,12,9Z" transform="translate(-1 -4.5)" fill="#555"/>
+                                                                </svg>  
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th class="fw-normal" scope="row">#0082</th>
+                                                <td>Joana Nicolau</td>
+                                                <td>650,00€</td>
+                                                <td>
+                                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18.132" height="15" viewBox="0 0 18.132 15">
+                                                                    <path id="Caminho_367" data-name="Caminho 367" d="M3,10H14v2H3ZM3,8H14V6H3Zm0,8h7V14H3Zm15.01-3.13.71-.71a1,1,0,0,1,1.41,0l.71.71a1,1,0,0,1,0,1.41l-.71.71Zm-.71.71L12,18.88V21h2.12l5.3-5.3Z" transform="translate(-3 -6)" fill="#555"/>
+                                                                </svg>
+                                                            </button>
+                                                        </a>
+                                                        
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="15" viewBox="0 0 22 15">
+                                                                    <path id="Caminho_519" data-name="Caminho 519" d="M12,4.5A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5ZM12,17a5,5,0,1,1,5-5A5,5,0,0,1,12,17Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,12,9Z" transform="translate(-1 -4.5)" fill="#555"/>
+                                                                </svg>  
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th class="fw-normal" scope="row">#0081</th>
+                                                <td>Bruno Cunha</td>
+                                                <td>3.500,00€</td>
+                                                <td>
+                                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18.132" height="15" viewBox="0 0 18.132 15">
+                                                                    <path id="Caminho_367" data-name="Caminho 367" d="M3,10H14v2H3ZM3,8H14V6H3Zm0,8h7V14H3Zm15.01-3.13.71-.71a1,1,0,0,1,1.41,0l.71.71a1,1,0,0,1,0,1.41l-.71.71Zm-.71.71L12,18.88V21h2.12l5.3-5.3Z" transform="translate(-3 -6)" fill="#555"/>
+                                                                </svg>
+                                                            </button>
+                                                        </a>
+                                                        
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="15" viewBox="0 0 22 15">
+                                                                    <path id="Caminho_519" data-name="Caminho 519" d="M12,4.5A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5ZM12,17a5,5,0,1,1,5-5A5,5,0,0,1,12,17Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,12,9Z" transform="translate(-1 -4.5)" fill="#555"/>
+                                                                </svg>  
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th class="fw-normal" scope="row">#0080</th>
+                                                <td>Paulo Real</td>
+                                                <td>250,00€</td>
+                                                <td>
+                                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18.132" height="15" viewBox="0 0 18.132 15">
+                                                                    <path id="Caminho_367" data-name="Caminho 367" d="M3,10H14v2H3ZM3,8H14V6H3Zm0,8h7V14H3Zm15.01-3.13.71-.71a1,1,0,0,1,1.41,0l.71.71a1,1,0,0,1,0,1.41l-.71.71Zm-.71.71L12,18.88V21h2.12l5.3-5.3Z" transform="translate(-3 -6)" fill="#555"/>
+                                                                </svg>
+                                                            </button>
+                                                        </a>
+                                                        
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="15" viewBox="0 0 22 15">
+                                                                    <path id="Caminho_519" data-name="Caminho 519" d="M12,4.5A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5ZM12,17a5,5,0,1,1,5-5A5,5,0,0,1,12,17Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,12,9Z" transform="translate(-1 -4.5)" fill="#555"/>
+                                                                </svg>  
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th class="fw-normal" scope="row">#0079</th>
+                                                <td>Mario Guerreiro</td>
+                                                <td>5.500,00€</td>
+                                                <td>
+                                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18.132" height="15" viewBox="0 0 18.132 15">
+                                                                    <path id="Caminho_367" data-name="Caminho 367" d="M3,10H14v2H3ZM3,8H14V6H3Zm0,8h7V14H3Zm15.01-3.13.71-.71a1,1,0,0,1,1.41,0l.71.71a1,1,0,0,1,0,1.41l-.71.71Zm-.71.71L12,18.88V21h2.12l5.3-5.3Z" transform="translate(-3 -6)" fill="#555"/>
+                                                                </svg>
+                                                            </button>
+                                                        </a>
+                                                        
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="15" viewBox="0 0 22 15">
+                                                                    <path id="Caminho_519" data-name="Caminho 519" d="M12,4.5A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5ZM12,17a5,5,0,1,1,5-5A5,5,0,0,1,12,17Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,12,9Z" transform="translate(-1 -4.5)" fill="#555"/>
+                                                                </svg>  
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tfoot>
+                                            <tr>
+                                                <th class="fw-light" scope="col">Orçamento</th>
+                                                <th class="fw-light text-center" scope="col">Nome</th>
+                                                <th class="fw-light text-end" scope="col">Total</th>
+                                                <th class="fw-light" scope="col">Ações</th>
+                                              </tr>
+                                        </tfoot>
+                                        
                                     </table>
+                                </div>
+
+                                <div class="table-responsive d-none d-lg-flex">
+                                    <table class="table table-hover table-striped">
+
+                                        <thead>
+                                            <tr>
+                                              <th class="fw-light" scope="col">Orçamento</th>
+                                              <th class="fw-light" scope="col">Nome</th>
+                                              <th class="fw-light" scope="col">Data</th>
+                                              <th class="fw-light text-center" scope="col">Estado</th>
+                                              <th class="fw-light text-end" scope="col">Total</th>
+                                              <th class="fw-light text-end" scope="col">Ações</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody class="align-middle">
+                                            <tr>
+                                                <th class="fw-normal" scope="row">#0088</th>
+                                                <td>Marcelo Machado</td>
+                                                <td>20&frasl;março&frasl;2022</td>
+                                                <td class="d-flex justify-content-center">
+                                                    <div class="w-50 w-md-100 py-2 bg-red text-center text-break text-white rounded">
+                                                        Nova
+                                                    </div>
+                                                </td>
+                                                <td>50,00€</td>
+                                                <td>
+                                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18.132" height="15" viewBox="0 0 18.132 15">
+                                                                    <path id="Caminho_367" data-name="Caminho 367" d="M3,10H14v2H3ZM3,8H14V6H3Zm0,8h7V14H3Zm15.01-3.13.71-.71a1,1,0,0,1,1.41,0l.71.71a1,1,0,0,1,0,1.41l-.71.71Zm-.71.71L12,18.88V21h2.12l5.3-5.3Z" transform="translate(-3 -6)" fill="#555"/>
+                                                                </svg>
+                                                            </button>
+                                                        </a>
+                                                        
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="15" viewBox="0 0 22 15">
+                                                                    <path id="Caminho_519" data-name="Caminho 519" d="M12,4.5A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5ZM12,17a5,5,0,1,1,5-5A5,5,0,0,1,12,17Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,12,9Z" transform="translate(-1 -4.5)" fill="#555"/>
+                                                                </svg>  
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th class="fw-normal" scope="row">#0087</th>
+                                                <td>Antonio Rodrigues</td>
+                                                <td>19&frasl;março&frasl;2022</td>
+                                                <td class="d-flex justify-content-center">
+                                                    <div class="w-50 w-md-100 py-2 bg-red text-center text-break text-white rounded">
+                                                        Nova
+                                                    </div>
+                                                </td>
+                                                <td class="text-end">100,00€</td>
+                                                <td class="text-end">
+                                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18.132" height="15" viewBox="0 0 18.132 15">
+                                                                    <path id="Caminho_367" data-name="Caminho 367" d="M3,10H14v2H3ZM3,8H14V6H3Zm0,8h7V14H3Zm15.01-3.13.71-.71a1,1,0,0,1,1.41,0l.71.71a1,1,0,0,1,0,1.41l-.71.71Zm-.71.71L12,18.88V21h2.12l5.3-5.3Z" transform="translate(-3 -6)" fill="#555"/>
+                                                                </svg>
+                                                            </button>
+                                                        </a>
+                                                        
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="15" viewBox="0 0 22 15">
+                                                                    <path id="Caminho_519" data-name="Caminho 519" d="M12,4.5A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5ZM12,17a5,5,0,1,1,5-5A5,5,0,0,1,12,17Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,12,9Z" transform="translate(-1 -4.5)" fill="#555"/>
+                                                                </svg>  
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th class="fw-normal" scope="row">#0086</th>
+                                                <td>Rui Matias</td>
+                                                <td>19&frasl;março&frasl;2022</td>
+                                                <td class="d-flex justify-content-center">
+                                                    <div class="w-50 w-md-100 py-2 bg-red text-center text-break text-white rounded">
+                                                        Nova
+                                                    </div>
+                                                </td>
+                                                <td>450,00€</td>
+                                                <td>
+                                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18.132" height="15" viewBox="0 0 18.132 15">
+                                                                    <path id="Caminho_367" data-name="Caminho 367" d="M3,10H14v2H3ZM3,8H14V6H3Zm0,8h7V14H3Zm15.01-3.13.71-.71a1,1,0,0,1,1.41,0l.71.71a1,1,0,0,1,0,1.41l-.71.71Zm-.71.71L12,18.88V21h2.12l5.3-5.3Z" transform="translate(-3 -6)" fill="#555"/>
+                                                                </svg>
+                                                            </button>
+                                                        </a>
+                                                        
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="15" viewBox="0 0 22 15">
+                                                                    <path id="Caminho_519" data-name="Caminho 519" d="M12,4.5A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5ZM12,17a5,5,0,1,1,5-5A5,5,0,0,1,12,17Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,12,9Z" transform="translate(-1 -4.5)" fill="#555"/>
+                                                                </svg>  
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th class="fw-normal" scope="row">#0085</th>
+                                                <td>Mario Guerreiro</td>
+                                                <td>17&frasl;março&frasl;2022</td>
+                                                <td class="d-flex justify-content-center">
+                                                    <div class="w-75 w-md-100 py-2 bg-yellow text-center text-break text-white rounded">
+                                                        Em tratamento
+                                                    </div>
+                                                </td>
+                                                <td>1.500,00€</td>
+                                                <td>
+                                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18.132" height="15" viewBox="0 0 18.132 15">
+                                                                    <path id="Caminho_367" data-name="Caminho 367" d="M3,10H14v2H3ZM3,8H14V6H3Zm0,8h7V14H3Zm15.01-3.13.71-.71a1,1,0,0,1,1.41,0l.71.71a1,1,0,0,1,0,1.41l-.71.71Zm-.71.71L12,18.88V21h2.12l5.3-5.3Z" transform="translate(-3 -6)" fill="#555"/>
+                                                                </svg>
+                                                            </button>
+                                                        </a>
+                                                        
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="15" viewBox="0 0 22 15">
+                                                                    <path id="Caminho_519" data-name="Caminho 519" d="M12,4.5A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5ZM12,17a5,5,0,1,1,5-5A5,5,0,0,1,12,17Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,12,9Z" transform="translate(-1 -4.5)" fill="#555"/>
+                                                                </svg>  
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th class="fw-normal" scope="row">#0084</th>
+                                                <td>Ana Batista</td>
+                                                <td>17&frasl;março&frasl;2022</td>
+                                                <td class="d-flex justify-content-center">
+                                                    <div class="w-75 w-md-100 py-2 bg-yellow text-center text-break text-white rounded">
+                                                        Em tratamento
+                                                    </div>
+                                                </td>
+                                                <td>850,00€</td>
+                                                <td>
+                                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18.132" height="15" viewBox="0 0 18.132 15">
+                                                                    <path id="Caminho_367" data-name="Caminho 367" d="M3,10H14v2H3ZM3,8H14V6H3Zm0,8h7V14H3Zm15.01-3.13.71-.71a1,1,0,0,1,1.41,0l.71.71a1,1,0,0,1,0,1.41l-.71.71Zm-.71.71L12,18.88V21h2.12l5.3-5.3Z" transform="translate(-3 -6)" fill="#555"/>
+                                                                </svg>
+                                                            </button>
+                                                        </a>
+                                                        
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="15" viewBox="0 0 22 15">
+                                                                    <path id="Caminho_519" data-name="Caminho 519" d="M12,4.5A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5ZM12,17a5,5,0,1,1,5-5A5,5,0,0,1,12,17Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,12,9Z" transform="translate(-1 -4.5)" fill="#555"/>
+                                                                </svg>  
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th class="fw-normal" scope="row">#0083</th>
+                                                <td>Tiago Pinto</td>
+                                                <td>15&frasl;março&frasl;2022</td>
+                                                <td class="d-flex justify-content-center">
+                                                    <div class="w-50 w-md-100 py-2 bg-gray text-center text-break text-white rounded">
+                                                        Enviado
+                                                    </div>
+                                                </td>
+                                                <td>450,00€</td>
+                                                <td>
+                                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18.132" height="15" viewBox="0 0 18.132 15">
+                                                                    <path id="Caminho_367" data-name="Caminho 367" d="M3,10H14v2H3ZM3,8H14V6H3Zm0,8h7V14H3Zm15.01-3.13.71-.71a1,1,0,0,1,1.41,0l.71.71a1,1,0,0,1,0,1.41l-.71.71Zm-.71.71L12,18.88V21h2.12l5.3-5.3Z" transform="translate(-3 -6)" fill="#555"/>
+                                                                </svg>
+                                                            </button>
+                                                        </a>
+                                                        
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="15" viewBox="0 0 22 15">
+                                                                    <path id="Caminho_519" data-name="Caminho 519" d="M12,4.5A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5ZM12,17a5,5,0,1,1,5-5A5,5,0,0,1,12,17Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,12,9Z" transform="translate(-1 -4.5)" fill="#555"/>
+                                                                </svg>  
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th class="fw-normal" scope="row">#0082</th>
+                                                <td>Joana Nicolau</td>
+                                                <td>12&frasl;março&frasl;2022</td>
+                                                <td class="d-flex justify-content-center">
+                                                    <div class="w-50 w-md-100 py-2 bg-blue text-center text-break text-white rounded">
+                                                        Confirmado
+                                                    </div>
+                                                </td>
+                                                <td>650,00€</td>
+                                                <td>
+                                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18.132" height="15" viewBox="0 0 18.132 15">
+                                                                    <path id="Caminho_367" data-name="Caminho 367" d="M3,10H14v2H3ZM3,8H14V6H3Zm0,8h7V14H3Zm15.01-3.13.71-.71a1,1,0,0,1,1.41,0l.71.71a1,1,0,0,1,0,1.41l-.71.71Zm-.71.71L12,18.88V21h2.12l5.3-5.3Z" transform="translate(-3 -6)" fill="#555"/>
+                                                                </svg>
+                                                            </button>
+                                                        </a>
+                                                        
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="15" viewBox="0 0 22 15">
+                                                                    <path id="Caminho_519" data-name="Caminho 519" d="M12,4.5A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5ZM12,17a5,5,0,1,1,5-5A5,5,0,0,1,12,17Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,12,9Z" transform="translate(-1 -4.5)" fill="#555"/>
+                                                                </svg>  
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th class="fw-normal" scope="row">#0081</th>
+                                                <td>Bruno Cunha</td>
+                                                <td>10&frasl;março&frasl;2022</td>
+                                                <td class="d-flex justify-content-center">
+                                                    <div class="w-50 w-md-100 py-2 bg-blue text-center text-break text-white rounded">
+                                                        Confirmado
+                                                    </div>
+                                                </td>
+                                                <td>3.500,00€</td>
+                                                <td>
+                                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18.132" height="15" viewBox="0 0 18.132 15">
+                                                                    <path id="Caminho_367" data-name="Caminho 367" d="M3,10H14v2H3ZM3,8H14V6H3Zm0,8h7V14H3Zm15.01-3.13.71-.71a1,1,0,0,1,1.41,0l.71.71a1,1,0,0,1,0,1.41l-.71.71Zm-.71.71L12,18.88V21h2.12l5.3-5.3Z" transform="translate(-3 -6)" fill="#555"/>
+                                                                </svg>
+                                                            </button>
+                                                        </a>
+                                                        
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="15" viewBox="0 0 22 15">
+                                                                    <path id="Caminho_519" data-name="Caminho 519" d="M12,4.5A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5ZM12,17a5,5,0,1,1,5-5A5,5,0,0,1,12,17Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,12,9Z" transform="translate(-1 -4.5)" fill="#555"/>
+                                                                </svg>  
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th class="fw-normal" scope="row">#0080</th>
+                                                <td>Paulo Real</td>
+                                                <td>8&frasl;março&frasl;2022</td>
+                                                <td class="d-flex justify-content-center">
+                                                    <div class="w-50 w-md-100 py-2 bg-grayHover text-center text-break text-white rounded">
+                                                        Cancelado
+                                                    </div>
+                                                </td>
+                                                <td>250,00€</td>
+                                                <td>
+                                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18.132" height="15" viewBox="0 0 18.132 15">
+                                                                    <path id="Caminho_367" data-name="Caminho 367" d="M3,10H14v2H3ZM3,8H14V6H3Zm0,8h7V14H3Zm15.01-3.13.71-.71a1,1,0,0,1,1.41,0l.71.71a1,1,0,0,1,0,1.41l-.71.71Zm-.71.71L12,18.88V21h2.12l5.3-5.3Z" transform="translate(-3 -6)" fill="#555"/>
+                                                                </svg>
+                                                            </button>
+                                                        </a>
+                                                        
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="15" viewBox="0 0 22 15">
+                                                                    <path id="Caminho_519" data-name="Caminho 519" d="M12,4.5A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5ZM12,17a5,5,0,1,1,5-5A5,5,0,0,1,12,17Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,12,9Z" transform="translate(-1 -4.5)" fill="#555"/>
+                                                                </svg>  
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th class="fw-normal" scope="row">#0079</th>
+                                                <td>Mario Guerreiro</td>
+                                                <td>6&frasl;março&frasl;2022</td>
+                                                <td class="d-flex justify-content-center">
+                                                    <div class="w-50 w-md-100 py-2 bg-grayHover text-center text-break text-white rounded">
+                                                        Cancelado
+                                                    </div>
+                                                </td>
+                                                <td>5.500,00€</td>
+                                                <td>
+                                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18.132" height="15" viewBox="0 0 18.132 15">
+                                                                    <path id="Caminho_367" data-name="Caminho 367" d="M3,10H14v2H3ZM3,8H14V6H3Zm0,8h7V14H3Zm15.01-3.13.71-.71a1,1,0,0,1,1.41,0l.71.71a1,1,0,0,1,0,1.41l-.71.71Zm-.71.71L12,18.88V21h2.12l5.3-5.3Z" transform="translate(-3 -6)" fill="#555"/>
+                                                                </svg>
+                                                            </button>
+                                                        </a>
+                                                        
+                                                        <a href="">
+                                                            <button type="button" class="btn btn-light border border-light rounded">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="15" viewBox="0 0 22 15">
+                                                                    <path id="Caminho_519" data-name="Caminho 519" d="M12,4.5A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5ZM12,17a5,5,0,1,1,5-5A5,5,0,0,1,12,17Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,12,9Z" transform="translate(-1 -4.5)" fill="#555"/>
+                                                                </svg>  
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tfoot>
+                                            <tr>
+                                                <th class="fw-light" scope="col">Orçamento</th>
+                                                <th class="fw-light" scope="col">Nome</th>
+                                                <th class="fw-light" scope="col">Data</th>
+                                                <th class="fw-light text-center scope="col">Estado</th>
+                                                <th class="fw-light text-end" scope="col">Total</th>
+                                                <th class="fw-light" scope="col">Ações</th>
+                                              </tr>
+                                        </tfoot>
+                                        
+                                    </table>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="row justify-content-center align-items-center pt-4">
+                                
+                                <div class="d-none d-lg-block col-lg-2 offset-lg-8 text-end fw-light">
+                                    88 Orçamentos
+                                </div>
+
+                                <div class="col-5 pb-5 col-lg-2 pb-lg-0">
+                                    <ul class="pagination align-items-center justify-content-end mb-0">
+                                        <li class="page-item">
+                                          <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                          </a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                          <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                          </a>
+                                        </li>
+                                      </ul>
                                 </div>
 
                             </div>
