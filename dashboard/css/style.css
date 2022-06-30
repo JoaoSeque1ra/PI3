@@ -18,9 +18,8 @@
     --black: #000;
     --borderColor: #DDDDDD;
     --checkBoxColor: #fbfbfb;
-    --transparent: #fefefe00;
-    --grayDashboard: #555555;
-    --grayDashboardHover: #777777;
+
+
     --cardsColorDashboard: hsla(0, 0%, 0%, 0.03);
 }
 
@@ -37,6 +36,9 @@ body {
     background-color: var(--incommunOrange) !important;
 }
 
+
+
+
 .bg-red {
     background-color: var(--incommunRed) !important;
 }
@@ -52,6 +54,10 @@ body {
 .bg-cardsDashboard {
     background-color: var(--cardsColorDashboard) !important;
 }
+
+
+
+
 
 .bg-white {
     background-color: var(--white) !important;
@@ -105,9 +111,7 @@ body {
     font-weight: 500;
 }
 
-.changeContainer-fluid {
-    margin-left: 280px !important;
-}
+
 
 .h-70px {
     height: 70px;
@@ -146,7 +150,6 @@ input[type="checkbox"] {
     height: 20px;
     width: 20px;
 }
-
 
 /*-----------botões seguinte e anterior-----------------*/
 
