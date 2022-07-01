@@ -28,12 +28,20 @@ body {
     scroll-behavior: smooth;
 }
 
+.bg-white{
+    background-color: var(--white);
+}
+
 .bg-yellow {
     background-color: var(--incommunYellow) !important;
 }
 
 .bg-orange {
     background-color: var(--incommunOrange) !important;
+}
+
+.bg-orange-dark{
+    background-color: var(--incommunOrangeDark)!important;
 }
 
 .bg-blue {
@@ -78,6 +86,10 @@ body {
 
 .text-orange {
     color: var(--incommunOrange) !important;
+}
+
+.text-orange-dark{
+    color: var(--incommunOrangeDark)!important;
 }
 
 .text-blue {
@@ -337,5 +349,10 @@ b{
     -webkit-text-stroke: 1px white;
     padding: 0%;
 
+}
+
+.line{
+    border-left: 6px solid white;
+    height: 500px;
 }
 
