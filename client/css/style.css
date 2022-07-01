@@ -272,7 +272,8 @@ input[type="checkbox"]:checked::after {
 /*-----------Cartões-----------------*/
 .card-paidmedia-gestaoredessociais{
     text-align: center !important;
-    height: 646px !important;
+    min-height: 600px !important;
+    min-width: 300px !important;
     border: 1px solid var(--incommunYellow) !important;
     border-radius: 3rem !important;
 }
