@@ -36,6 +36,10 @@ body {
     background-color: var(--incommunYellow) !important;
 }
 
+.bg-yellow-dark{
+    background-color: var(--incommunYellowDark) !important;
+}
+
 .bg-orange {
     background-color: var(--incommunOrange) !important;
 }
@@ -54,6 +58,10 @@ body {
 
 .bg-purple {
     background-color: var(--incommunPurple) !important;
+}
+
+.bg-purple-dark{
+    background-color: var(--incommunPurpleDark) !important;
 }
 
 .bg-borderColor {
@@ -84,6 +92,10 @@ body {
     color: var(--incommunYellow) !important;
 }
 
+.text-yellow-dark{
+    color: var(--incommunYellowDark) !important;
+}
+
 .text-orange {
     color: var(--incommunOrange) !important;
 }
@@ -101,6 +113,10 @@ body {
 }
 .text-purple {
     color: var(--incommunPurple) !important;
+}
+
+.text-purple-dark{
+    color: var(--incommunPurpleDark) !important;
 }
 
 .cursor-pointer {
